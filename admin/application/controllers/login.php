@@ -25,7 +25,7 @@
 			$cek = $this->customer_model->getCustomer($hasil['email']);
 			if($hasil['password'] == $cek[0]->password){
 				echo 'oke';
-				redirect(site_url('produk'));
+				redirect(site_url('home'));
 			}
 			else{
 				echo 'salah';
