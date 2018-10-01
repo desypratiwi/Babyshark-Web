@@ -558,7 +558,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  </a> </div>		  
 		    <div class="menu">
 		      <ul id="menu" >
-		        <li id="menu-home" ><a href="index.html"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
+		        <li id="menu-home" ><a href="<?php echo site_url("home")?>"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
+				<li id="menu-user" ><a href="<?php echo site_url("customer")?>"><i class="fa fa-book"></i><span>User</span></a></li>
 		        <li id="menu-academico" ><a href="#"><i class="fa fa-file-text"></i><span>Halaman</span><span class="fa fa-angle-right" style="float: right"></span></a>
 		          <ul id="menu-academico-sub" >
 		          	 <li id="menu-academico-boletim" ><a href="login.html">Login</a></li>
