@@ -74,7 +74,7 @@
 					<div class="col-sm-4">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-user"></i> Akun</a></li>
+								<li><a href="<?php echo base_url()?>index.php/akun"><i class="fa fa-user"></i> Akun</a></li>
 								<li><a href="#"><i class="fa fa-bell"></i> Notifikasi</a></li>
 								<li><a href="#"><i class="fa fa-question"></i> Bantuan</a></li>
 							</ul>

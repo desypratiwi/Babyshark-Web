@@ -17,8 +17,9 @@
 		public function daftar($data){
 			$data['role']=3;
 			$this->db->insert('tb_user',$data);
+		}
 
-		public function checkLogin($username, $password){
+		 function checkLogin($username, $password){
 			$sql = "Select * from tb_user where username = '".$username."' and `password` = '".$password."'";
 			$hasil = $this->db->query($sql);
 			
@@ -30,7 +31,7 @@
 			}
 			
 		}
-		public function cekRole($username){
+		function cekRole($username){
 			$sql = "SELECT * FROM `tb_user` where username = '".$username."'";
 			$hasil = $this->db->query($sql)->row_array();
 			return $hasil;
@@ -38,4 +39,3 @@
 
 		}
 	}
-?>
