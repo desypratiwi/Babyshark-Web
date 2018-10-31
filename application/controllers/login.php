@@ -21,16 +21,31 @@
 		}
 		public function cek_login(){
 			$hasil = $this->input->post();
-			//print_r($hasil);
-			$cek = $this->customer_model->getCustomer($hasil['email']);
-			if($hasil['password'] == $cek[0]->password){
-				echo 'oke';
-				redirect(site_url('home'));
+			
+			$cek = $this->customer_model->checkLogin($hasil['email'],$hasil['password']);
+			if ($cek == true){
+			 $hasilcekRole = $this->customer_model->cekRole($hasil['email']);
+			//print_r($hasilcekRole);
+				$this->session->set_userdata('isLogin','udahLogin');
+				if($hasilcekRole['role'] == 3){
+					redirect (site_url('home'));
+					//echo "masuk ke home";
+				}else{
+					redirect (site_url('dashboard'));
+					//echo "dashboard";
+				}
+				
+			}else{ 
+			$this->session->set_flashdata('gagal_login','gagal');
+				redirect (site_url('login'));
 			}
-			else{
-				echo 'salah';
-				redirect(site_url('login'));
-			}
+			
 		}
+		public function logout(){
+			//echo 'ini halaman logout';
+			$this->session->sess_destroy();
+			redirect (site_url('login'));
+		}
+		
 	}
 ?>

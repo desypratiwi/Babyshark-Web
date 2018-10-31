@@ -112,7 +112,7 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="home">Home</a></li>
 								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Products</a></li>
@@ -152,10 +152,16 @@
 						<form action="<?php echo site_url('login/cek_login') ?>" method="post">
 							<input type="text" name="email" placeholder="Email" />
 							<input type="password" name="password" placeholder="Password" />
-							<span>
+							<!--<span>
 								<input type="checkbox" class="checkbox"> 
 								Keep me signed in
-							</span>
+							</span>-->
+							<?php
+							$tesLogin = $this->session->flashdata('gagal_login');
+							//echo $tesLogin;
+							if($tesLogin == 'gagal'){
+								echo '<div class="alert alert-danger" role="alert">Oh no! Wrong Username or Password</div>';
+							}?>
 							<button type="submit" class="btn btn-default">Login</button>
 						</form>
 					</div><!--/login form-->

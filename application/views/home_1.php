@@ -90,7 +90,16 @@
 								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
 								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="<?php echo site_url("login") ?>"><i class="fa fa-lock"></i> Login</a></li>
+								<?php 
+								$sessionLogin = $this->session->userdata('isLogin');
+								//echo $sessionLogin;die;
+								if( $sessionLogin == 'udahLogin'){
+									echo '<li><a href="'.site_url("login/logout").'"><i class="fa fa-lock"></i> Logout</a></li>';
+									
+									
+								}else{
+									echo '<li><a href="'.site_url("login").'"><i class="fa fa-lock"></i> Login</a></li>';
+								}?>
 							</ul>
 						</div>
 					</div>
