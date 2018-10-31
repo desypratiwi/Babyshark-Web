@@ -58,7 +58,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</div>
 											</li>
 											<li><a href="#">
-											   <div class="user_img"><img src="<?php echo base_url().'asset/images/';?>p4.png" alt=""></div>
+											   <div class="user_img"><img src="images/p4.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor</p>
 												<p><span>1 hour ago</span></p>
@@ -66,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											   <div class="clearfix"></div>	
 											</a></li>
 											<li class="odd"><a href="#">
-												<div class="user_img"><img src="<?php echo base_url().'asset/images/';?>p2.png" alt=""></div>
+												<div class="user_img"><img src="images/p2.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor </p>
 												<p><span>1 hour ago</span></p>
@@ -74,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											  <div class="clearfix"></div>	
 											</a></li>
 											<li><a href="#">
-											   <div class="user_img"><img src="<?php echo base_url().'asset/images/';?>p3.png" alt=""></div>
+											   <div class="user_img"><img src="images/p3.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor</p>
 												<p><span>1 hour ago</span></p>
@@ -97,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</div>
 											</li>
 											<li><a href="#">
-												<div class="user_img"><img src="<?php echo base_url().'asset/images/';?>p5.png" alt=""></div>
+												<div class="user_img"><img src="images/p5.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor</p>
 												<p><span>1 hour ago</span></p>
@@ -105,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											  <div class="clearfix"></div>	
 											 </a></li>
 											 <li class="odd"><a href="#">
-												<div class="user_img"><img src="<?php echo base_url().'asset/images/';?>p6.png" alt=""></div>
+												<div class="user_img"><img src="images/p6.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor</p>
 												<p><span>1 hour ago</span></p>
@@ -113,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											   <div class="clearfix"></div>	
 											 </a></li>
 											 <li><a href="#">
-												<div class="user_img"><img src="<?php echo base_url().'asset/images/';?>p7.png" alt=""></div>
+												<div class="user_img"><img src="images/p7.png" alt=""></div>
 											   <div class="notification_desc">
 												<p>Lorem ipsum dolor</p>
 												<p><span>1 hour ago</span></p>
@@ -187,7 +187,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li class="dropdown profile_details_drop">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 											<div class="profile_img">	
-												<span class="prfil-img"><img src="<?php echo base_url().'asset/images/';?>p1.png" alt=""> </span> 
+												<span class="prfil-img"><img src="images/p1.png" alt=""> </span> 
 												<div class="user-name">
 													<p>Sakura</p>
 													<span>Administrator</span>
@@ -228,160 +228,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- /script-for sticky-nav -->
 <!--inner block start here-->
 <div class="inner-block">
-    <div class="product-block">
-    	<div class="pro-head">
-    		<h2>Products</h2>
-    	</div>
-    	<div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		    <div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>basketballbaby.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>basketballbaby.jpg" alt="">
-					</div>
-	    		<div class="produ-cost">
-	    			<h4>Jordan Baby Pink</h4>
-	    			<h5>256 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		   <div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>daddyprincess.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>daddyprincess.jpg" alt="">
-					</div>
-	    		<div class="produ-cost">
-	    			<h4>Daddy Princess Soft Pink</h4>
-	    			<h5>156 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		<div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>hiphopbaby.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>hiphopbaby.jpg" alt="">
-				</div>
-	    		<div class="produ-cost">
-	    			<h4>Hiphop Boy</h4>
-	    			<h5>500 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-    	<!--- <div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		  <div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>pro4.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>pro4.jpg" alt="">
-					</div>
-	    		<div class="produ-cost">
-	    			<h4>Temporibus autem</h4>
-	    			<h5>188 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		 <div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>pro5.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>pro5.jpg" alt="">
-					</div>
-	    		<div class="produ-cost">
-	    			<h4>Temporibus autem</h4>
-	    			<h5>220 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		  <div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>pro6.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>pro6.jpg" alt="">
-					</div>
-	    		<div class="produ-cost">
-	    			<h4>Temporibus autem</h4>
-	    			<h5>160 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		<div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>pro7.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>pro7.jpg" alt="">
-				</div>
-	    		<div class="produ-cost">
-	    			<h4>Temporibus autem</h4>
-	    			<h5>350 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		<div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>pro8.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>pro8.jpg" alt="">
-				</div>
-	    		<div class="produ-cost">
-	    			<h4>Temporibus autem</h4>
-	    			<h5>500 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		<div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>pro9.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>pro9.jpg" alt="">
-				</div>
-	    		<div class="produ-cost">
-	    			<h4>Temporibus autem</h4>
-	    			<h5>256 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		<div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>pro10.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>pro10.jpg" alt="">
-				</div>
-	    		<div class="produ-cost">
-	    			<h4>Temporibus autem</h4>
-	    			<h5>548 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		<div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>pro3.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>pro3.jpg" alt="">
-				</div>
-	    		<div class="produ-cost">
-	    			<h4>Temporibus autem</h4>
-	    			<h5>390 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-    	<div class="col-md-3 product-grid">
-    		<div class="product-items">
-	    		<div class="project-eff">
-						<div id="nivo-lightbox-demo"> <p> <a href="<?php echo base_url().'asset/images/';?>pro12.jpg"data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"><span class="rollover1"> </span> </a></p></div>     
-							<img class="img-responsive" src="<?php echo base_url().'asset/images/';?>pro12.jpg" alt="">
-				</div>
-	    		<div class="produ-cost">
-	    			<h4>Temporibus autem</h4>
-	    			<h5>150 $</h5>
-	    		</div>
-    		</div>
-    	</div>
-      <div class="clearfix"> </div> ---!>
-    </div>
+    <?php echo $content?>
 </div>
 <!--inner block end here-->
-<link rel="stylesheet" type="text/css" href="<?php echo base_url().'asset/css/';?>magnific-popup.css">
-			<script type="text/javascript" src="<?php echo base_url().'asset/js/';?>nivo-lightbox.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+			<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
 				<script type="text/javascript">
 				$(document).ready(function(){
 				    $('#nivo-lightbox-demo a').nivoLightbox({ effect: 'fade' });
@@ -403,41 +254,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		    <div class="menu">
 		      <ul id="menu" >
 		        <li id="menu-home" ><a href="index.html"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
-		        <li><a href="#"><i class="fa fa-cogs"></i><span>Components</span><span class="fa fa-angle-right" style="float: right"></span></a>
-		          <ul>
-		            <li><a href="grids.html">Grids</a></li>
-		            <li><a href="portlet.html">Portlets</a></li>		            
-		          </ul>
-		        </li>
-		        <li id="menu-comunicacao" ><a href="#"><i class="fa fa-book nav_icon"></i><span>Element</span><span class="fa fa-angle-right" style="float: right"></span></a>
-		          <ul id="menu-comunicacao-sub" >
-		            <li id="menu-mensagens" style="width: 120px" ><a href="buttons.html">Buttons</a>		              
-		            </li>
-		            <li id="menu-arquivos" ><a href="typography.html">Typography</a></li>
-		             <li id="menu-arquivos" ><a href="icons.html">Icons</a></li>
-		          </ul>
-		        </li>
-		          <li><a href="maps.html"><i class="fa fa-map-marker"></i><span>Maps</span></a></li>
-		        <li id="menu-academico" ><a href="#"><i class="fa fa-file-text"></i><span>Pages</span><span class="fa fa-angle-right" style="float: right"></span></a>
-		          <ul id="menu-academico-sub" >
-		          	 <li id="menu-academico-boletim" ><a href="login.html">Login</a></li>
-		            <li id="menu-academico-avaliacoes" ><a href="signup.html">Sign Up</a></li>		           
-		          </ul>
-		        </li>
+		      
 		        
 		        <li><a href="charts.html"><i class="fa fa-bar-chart"></i><span>Charts</span></a></li>
+				
 		        <li><a href="#"><i class="fa fa-envelope"></i><span>Mailbox</span><span class="fa fa-angle-right" style="float: right"></span></a>
 		        	 <ul id="menu-academico-sub" >
 			            <li id="menu-academico-avaliacoes" ><a href="inbox.html">Inbox</a></li>
 			            <li id="menu-academico-boletim" ><a href="inbox-details.html">Compose email</a></li>
 		             </ul>
 		        </li>
-		         <li><a href="#"><i class="fa fa-cog"></i><span>System</span><span class="fa fa-angle-right" style="float: right"></span></a>
-		         	 <ul id="menu-academico-sub" >
-			            <li id="menu-academico-avaliacoes" ><a href="404.html">404</a></li>
-			            <li id="menu-academico-boletim" ><a href="blank.html">Blank</a></li>
-		             </ul>
-		         </li>
+		      
 		         <li><a href="#"><i class="fa fa-shopping-cart"></i><span>E-Commerce</span><span class="fa fa-angle-right" style="float: right"></span></a>
 		         	<ul id="menu-academico-sub" >
 			            <li id="menu-academico-avaliacoes" ><a href="product.html">Product</a></li>
@@ -470,10 +297,10 @@ $(".sidebar-icon").click(function() {
             });
 </script>
 <!--scrolling js-->
-		<script src="<?php echo base_url().'asset/js/';?>jquery.nicescroll.js"></script>
-		<script src="<?php echo base_url().'asset/js/';?>scripts.js"></script>
+		<script src="js/jquery.nicescroll.js"></script>
+		<script src="js/scripts.js"></script>
 		<!--//scrolling js-->
-<script src="<?php echo base_url().'asset/js/';?>bootstrap.min.js"> </script>
+<script src="js/bootstrap.js"> </script>
 <!-- mother grid end here-->
 </body>
 </html>
