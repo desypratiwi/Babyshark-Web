@@ -10,8 +10,8 @@
 		
 		public function index(){
 			
-			$temp['c'] = $this->customer_model->getAll();
-			$this->load->view('login/tampilan_login',$temp);
+			//$temp['c'] = $this->customer_model->getAll();
+			$this->load->view('login/tampilan_login');
 		}
 		
 		public function show($cus1=''){

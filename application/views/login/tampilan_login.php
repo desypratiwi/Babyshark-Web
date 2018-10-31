@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Login | E-Shopper</title>
+    <title>Login | BABYSHARK</title>
     <link href="<?php echo base_url().'asset/css/';?>bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url().'asset/css/';?>font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url().'asset/css/';?>prettyPhoto.css" rel="stylesheet">
@@ -32,8 +32,8 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-								<li><a href=""><i class="fa fa-envelope"></i> info@domain.com</a></li>
+								<li><a href=""><i class="fa fa-phone"></i> +6281123456789</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> babyshark@gmail.com</a></li>
 							</ul>
 						</div>
 					</div>
@@ -57,7 +57,7 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="<?php echo base_url().'asset/images/';?>home/logo.png" alt="" /></a>
+							<a href="index.html"><img src="<?php echo base_url().'asset/images/';?>home/babydudu.png" alt="" /></a>
 						</div>
 						<div class="btn-group pull-right">
 							<div class="btn-group">
@@ -166,10 +166,13 @@
 				<div class="col-sm-4">
 					<div class="signup-form"><!--sign up form-->
 						<h2>New User Signup!</h2>
-						<form action="#">
-							<input type="text" placeholder="Name"/>
-							<input type="email" placeholder="Email Address"/>
-							<input type="password" placeholder="Password"/>
+						<form action="<?php echo site_url('/register/daftar')?>" method="POST">
+							<input name="username" type="text" placeholder="Username"/>
+							<input name="password" type="password" placeholder="Password"/>
+							<input name="nama" type="text" placeholder="Nama"/>
+							<input name="alamat" type="text" placeholder="Alamat"/>
+							<input name="email" type="email" placeholder="Email"/>
+							<input name="no_telp" type="text" placeholder="No Telp"/>
 							<button type="submit" class="btn btn-default">Signup</button>
 						</form>
 					</div><!--/sign up form-->
@@ -185,7 +188,7 @@
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="companyinfo">
-							<h2><span>e</span>-shopper</h2>
+							<h2><span>BABYSHARK</span></h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
 						</div>
 					</div>
@@ -301,7 +304,7 @@
 					</div>
 					<div class="col-sm-2">
 						<div class="single-widget">
-							<h2>About Shopper</h2>
+							<h2>About BABYSHARK</h2>
 							<ul class="nav nav-pills nav-stacked">
 								<li><a href="">Company Information</a></li>
 								<li><a href="">Careers</a></li>
@@ -313,7 +316,7 @@
 					</div>
 					<div class="col-sm-3 col-sm-offset-1">
 						<div class="single-widget">
-							<h2>About Shopper</h2>
+							<h2>About BABYSHARK</h2>
 							<form action="#" class="searchform">
 								<input type="text" placeholder="Your email address" />
 								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>

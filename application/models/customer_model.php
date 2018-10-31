@@ -13,5 +13,9 @@
 			$custom = $this->db->get_where('customer', array('email' => $email))->result();
 			return $custom;
 		}
+		public function daftar($data){
+			$data['role']=3;
+			$this->db->insert('tb_user',$data);
+		}
 	}
 ?>
