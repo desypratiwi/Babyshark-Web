@@ -55,7 +55,7 @@
 			<div class="container">
 				<div class="row">
 						<div  >
-							<a href="index.html"><img src="<?php echo base_url()?>asset/images/home/a3.jpg" alt="" style="display: block;margin-left: auto;margin-right: auto;width: 20%;" /></a>
+							<a href="home"><img src="<?php echo base_url()?>asset/images/home/a3.jpg" alt="" style="display: block;margin-left: auto;margin-right: auto;width: 20%;" /></a>
 						</div>
 				</div>
 			</div>

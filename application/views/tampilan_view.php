@@ -60,7 +60,7 @@
 				<div class="row">
 					<div class="col-sm-8">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="<?php echo base_url()?>asset/images/home/a2.jpg" alt="" /></a>
+							<a href="home"><img src="<?php echo base_url()?>asset/images/home/a2.jpg" alt="" /></a>
 						</div>
 						<div class="col-sm-8 col-sm-offset-1">
 						<div class="single-widget">
@@ -74,9 +74,15 @@
 					<div class="col-sm-4">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="<?php echo base_url()?>index.php/akun"><i class="fa fa-user"></i> Akun</a></li>
+							<?php //if(isset($_SESSION['isLogin']))var_dump($_SESSION['isLogin'])
+									//session_destroy();
+							?>
+
+								<?php if(isset($_SESSION['isLogin'])) {?><li><a href="<?php echo base_url()?>index.php/akun"><i class="fa fa-user"></i> Akun</a></li> <?php }?>
 								<li><a href="#"><i class="fa fa-bell"></i> Notifikasi</a></li>
 								<li><a href="#"><i class="fa fa-question"></i> Bantuan</a></li>
+								<?php if(!isset($_SESSION['isLogin'])) {?><li><a href="<?php echo base_url()?>index.php/login"><i class="fa fa-lock"></i> Login</a></li> <?php }?>
+								<?php if(isset($_SESSION['isLogin'])) {?><li><a href="<?php echo base_url()?>index.php/login/logout"><i class="fa fa-lock"></i> Logout</a></li> <?php }?>
 							</ul>
 						</div>
 					</div>
