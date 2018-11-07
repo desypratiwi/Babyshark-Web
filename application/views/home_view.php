@@ -20,38 +20,35 @@
 							<div class="item active">
 								<div class="col-sm-6">
 									<h1><span>BabyShark</span></h1>
-									<h2>Free E-Commerce Template</h2>
+									<h2>Tempatnya Baju Balita Lucu dan Murah</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="<?php echo base_url()?>asset/images/home/girl1.jpg" class="girl img-responsive" alt="" />
-									<img src="<?php echo base_url()?>asset/images/home/pricing.png"  class="pricing" alt="" />
+									<img src="<?php echo base_url()?>asset/images/home/s9.jpg" class="girl img-responsive" alt="" />
 								</div>
 							</div>
 							<div class="item">
 								<div class="col-sm-6">
 									<h1><span>BabyShark</span></h1>
-									<h2>100% Responsive Design</h2>
+									<h2>Tempatnya Baju Balita Lucu dan Murah</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="<?php echo base_url()?>asset/images/home/girl2.jpg" class="girl img-responsive" alt="" />
-									<img src="<?php echo base_url()?>asset/images/home/pricing.png"  class="pricing" alt="" />
+									<img src="<?php echo base_url()?>asset/images/home/s8.jpg" class="girl img-responsive" alt="" />
 								</div>
 							</div>
 							
 							<div class="item">
 								<div class="col-sm-6">
 									<h1><span>BabyShark</span></h1>
-									<h2>Free Ecommerce Template</h2>
+									<h2>Tempatnya Baju Balita Lucu dan Murah</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="<?php echo base_url()?>asset/images/home/girl3.jpg" class="girl img-responsive" alt="" />
-									<img src="<?php echo base_url()?>asset/images/home/pricing.png" class="pricing" alt="" />
+									<img src="<?php echo base_url()?>asset/images/home/s7.jpg" class="girl img-responsive" alt="" />
 								</div>
 							</div>
 							
@@ -220,7 +217,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="<?php echo base_url()?>asset/images/home/product1.jpg" alt="" />
+											<img src="<?php echo base_url()?>asset/images/home/a4.jpg" alt="" />
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -245,7 +242,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="<?php echo base_url()?>asset/images/home/product2.jpg" alt="" />
+										<img src="<?php echo base_url()?>asset/images/home/a7.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -270,7 +267,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="<?php echo base_url()?>asset/images/home/product3.jpg" alt="" />
+										<img src="<?php echo base_url()?>asset/images/home/a9.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -295,7 +292,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="<?php echo base_url()?>asset/images/home/product4.jpg" alt="" />
+										<img src="<?php echo base_url()?>asset/images/home/s4.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -321,7 +318,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="<?php echo base_url()?>asset/images/home/product5.jpg" alt="" />
+										<img src="<?php echo base_url()?>asset/images/home/a11.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -347,7 +344,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="<?php echo base_url()?>asset/images/home/product6.jpg" alt="" />
+										<img src="<?php echo base_url()?>asset/images/home/a10.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -387,7 +384,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery1.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a12.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -400,7 +397,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery2.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a13.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -413,7 +410,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery3.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a14.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -426,7 +423,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery4.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a15.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -442,7 +439,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery4.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a16.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -455,7 +452,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery3.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a17.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -468,7 +465,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery2.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a18.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -481,7 +478,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery1.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a19.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -497,7 +494,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery3.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a20.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -510,7 +507,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery4.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a21.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -523,7 +520,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery1.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a22.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -536,7 +533,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery2.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a23.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -552,7 +549,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery1.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a24.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -565,7 +562,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery2.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a25.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -578,7 +575,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery3.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a26.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -591,7 +588,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery4.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a27.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -607,7 +604,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery2.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a28.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -620,7 +617,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery4.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a29.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -633,7 +630,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery3.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a30.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -646,7 +643,7 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?php echo base_url()?>asset/images/home/gallery1.jpg" alt="" />
+												<img src="<?php echo base_url()?>asset/images/home/a31.jpg" alt="" />
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -669,7 +666,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="<?php echo base_url()?>asset/images/home/recommend1.jpg" alt="" />
+													<img src="<?php echo base_url()?>asset/images/home/a32.jpg" alt="" />
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -682,7 +679,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="<?php echo base_url()?>asset/images/home/recommend2.jpg" alt="" />
+													<img src="<?php echo base_url()?>asset/images/home/a33.jpg" alt="" />
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -695,7 +692,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="<?php echo base_url()?>asset/images/home/recommend3.jpg" alt="" />
+													<img src="<?php echo base_url()?>asset/images/home/a34.jpg" alt="" />
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -710,7 +707,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="<?php echo base_url()?>asset/images/home/recommend1.jpg" alt="" />
+													<img src="<?php echo base_url()?>asset/images/home/a35.jpg" alt="" />
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -723,7 +720,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="<?php echo base_url()?>asset/images/home/recommend2.jpg" alt="" />
+													<img src="<?php echo base_url()?>asset/images/home/a36.jpg" alt="" />
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -736,7 +733,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="<?php echo base_url()?>asset/images/home/recommend3.jpg" alt="" />
+													<img src="<?php echo base_url()?>asset/images/home/a37.jpg" alt="" />
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
