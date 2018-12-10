@@ -1,0 +1,54 @@
+---------------------------
+BAGIAN 1
+
+-Vendor : 
+Register 
+Login
+
+-Pembeli : 
+Register
+Login
+
+-Admin :
+Verifikasi pembayaran
+Upload banner promo
+---------------------------
+BAGIAN 2
+
+-Vendor : 
+Menambahkan Produk
+Upload foto produk
+Pencarian
+Edit detail item
+Tambah Kurir
+---------------------------
+BAGIAN 3
+
+-Admin :
+Tambah kurir
+Tambah kategori
+Pencarian
+Lihat seluruh order
+Update status order
+Lihat user
+Ubah policy (footer)
+---------------------------
+BAGIAN 4
+
+-Vendor : 
+Update order
+Tambah brand
+Update detail toko
+Pembeli : 
+Add to cart
+Pencarian 
+---------------------------
+BAGIAN 5
+
+-Pembeli : 
+Pembayaran 
+Edit profil
+View detail item
+Update order
+Lihat detail toko
+---------------------------
