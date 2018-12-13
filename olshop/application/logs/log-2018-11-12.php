@@ -20,3 +20,9 @@ ERROR - 2018-11-12 06:45:38 --> Could not find the language line "vendor_home_pa
 ERROR - 2018-11-12 06:51:31 --> Could not find the language line "vendor_home_page"
 ERROR - 2018-11-12 06:51:47 --> Could not find the language line "vendor_home_page"
 ERROR - 2018-11-12 06:54:26 --> Severity: Notice --> Undefined index: brand_id C:\xampp\htdocs\babyshark-web\olshop\application\modules\vendor\models\Products_model.php 52
+ERROR - 2018-11-12 06:59:12 --> 404 Page Not Found: /index
+ERROR - 2018-11-12 07:00:18 --> Could not find the language line "vendor_home_page"
+ERROR - 2018-11-12 07:00:35 --> Could not find the language line "vendor_home_page"
+ERROR - 2018-11-12 09:01:39 --> Could not find the language line "vendor_home_page"
+ERROR - 2018-11-12 09:06:47 --> Could not find the language line "vendor_home_page"
+ERROR - 2018-11-12 09:08:04 --> Severity: Notice --> Undefined index: brand_id C:\xampp\htdocs\babyshark-web\olshop\application\modules\vendor\models\Products_model.php 52
