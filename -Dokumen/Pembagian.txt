@@ -13,7 +13,7 @@ Login
 Verifikasi pembayaran
 Upload banner promo
 ---------------------------
-BAGIAN 2
+BAGIAN 2 : Nadya Kusuma Dewi
 
 -Vendor : 
 Menambahkan Produk
@@ -33,7 +33,7 @@ Update status order
 Lihat user
 Ubah policy (footer)
 ---------------------------
-BAGIAN 4
+BAGIAN 4 : Yones Prada Pratasya
 
 -Vendor : 
 Update order
@@ -43,7 +43,7 @@ Pembeli :
 Add to cart
 Pencarian 
 ---------------------------
-BAGIAN 5
+BAGIAN 5 : Desy Rahmawati
 
 -Pembeli : 
 Pembayaran 
