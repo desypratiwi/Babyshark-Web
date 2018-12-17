@@ -23,7 +23,7 @@ Pencarian
 Edit detail item
 Tambah Kurir
 ---------------------------
-BAGIAN 3
+BAGIAN 3 : Galih Pratama Adji
 
 -Admin :
 Tambah kurir
@@ -34,7 +34,8 @@ Update status order
 Lihat user
 Ubah policy (footer)
 ---------------------------
-BAGIAN 4 : 
+BAGIAN 4 : Raham Zulfikar Al Bakhri
+
 -Vendor : 
 Update order
 Tambah brand
