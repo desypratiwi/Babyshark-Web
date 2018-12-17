@@ -1,5 +1,6 @@
 ---------------------------
-BAGIAN 1
+BAGIAN 1 : Yones Prada Pratasya
+
 
 -Vendor : 
 Register 
@@ -33,8 +34,7 @@ Update status order
 Lihat user
 Ubah policy (footer)
 ---------------------------
-BAGIAN 4 : Yones Prada Pratasya
-
+BAGIAN 4 : 
 -Vendor : 
 Update order
 Tambah brand
