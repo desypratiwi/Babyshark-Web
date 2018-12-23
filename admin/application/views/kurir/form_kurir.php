@@ -1,6 +1,7 @@
 
 
-<form method="post" action="<?php echo site_url('kurir/form/tambah')?>">
+<form method="post" enctype="multipart/form-data" action="<?php echo site_url('kurir/form/tambah')?>">
+    <?php if(isset($error)) print_r($error); ?>
     <table>
         <tr>
             <td>Nama Perusahaan Kurir</td>
@@ -16,7 +17,7 @@
         </tr>
         <tr>
             <td>Logo</td>
-            <td><input type="textarea" name="telp_perusahaan" placeholder="Isikan Telp Kurir"/></td>
+            <td><input type="file" name="logo_perusahaan" /></td>
         </tr>
         <tr>
             <td></td>
