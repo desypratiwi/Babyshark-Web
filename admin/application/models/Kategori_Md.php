@@ -8,5 +8,8 @@
 		public function addKategori($data){
                     return $this->db->insert('tb_mst_kategori',$data);
                 }
+                public function allKategori(){
+                    return $this->db->get("tb_mst_kategori")->result();
+                }
 	}
 ?>

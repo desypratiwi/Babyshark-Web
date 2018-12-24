@@ -4,16 +4,16 @@
 <link href='<?php echo base_url() . 'asset/css/'; ?>jquery.dataTables.min.css' rel='stylesheet' type='text/css'>
 <div>
     <div ><button type="button" class="btn btn-primary btn-md pull-right" style="margin-bottom: 20px">
-            <span class="glyphicon glyphicon-plus"></span>New Kurir </button>
+            <span class="glyphicon glyphicon-plus"></span>New Category </button>
     </div>
     
-    <table id="tabel-kurir" class="table table-striped table-bordered" style="width:100%">
+    <table id="tabel-kategori" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Perusahaan</th>
-                <th>Telp Perusahaan</th>
-                <th>Email</th>
+                <th>Kategori</th>
+                <th>Deskripsi</th>
+                <th>Aktif</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -23,9 +23,9 @@
         <tfoot>
             <tr>
                 <th>Id</th>
-                <th>Perusahaan</th>
-                <th>Telp Perusahaan</th>
-                <th>Email</th>
+                <th>Kategori</th>
+                <th>Deskripsi</th>
+                <th>Aktif</th>
                 <th>Action</th>
             </tr>
         </tfoot>
@@ -35,22 +35,15 @@
 
 <script>
     $(document).ready(function () {
-        $('#tabel-kurir').DataTable({
-           ajax: "kurir/all_kurir",
+        $('#tabel-kategori').DataTable({
+           ajax: "kategori/all_kategori",
            "columns":[
-               {"data":"id_kurir"},
-               {"data":"nama_perusahaan"},
-               {"data":"telp_perusahaan"},
-               {"data":"email_perusahaan"},
+               {"data":"id_kategori"},
+               {"data":"nama_kategori"},
+               {"data":"deskripsi_kategori"},
+               {"data":"aktif"},
                {"data":"aksi"}
-           ],
-            "columnDefs": [
-                {
-                    "targets": [0],
-                    "visible": false,
-                    "searchable": false
-                }
-            ]
+           ]
         });
            
     });

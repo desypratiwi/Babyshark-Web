@@ -87,5 +87,21 @@ class Kurir extends CI_Controller {
              
         }
     }
-
+    function all_kurir(){
+        $data = $this->Kurir_Md->allKurir();
+        
+         foreach ($data as $row) {
+                $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
+                           <ul class='dropdown-menu pull-right text-left'>
+                           <li><a href='#' class='clickable' onClick='aksi({$row->id_kurir},\"show\")'>View</a></li>
+                           <li><a href='#' class='clickable' onClick='aksi({$row->id_kurir},\"edit\")'>Edit</a></li>
+                           <li><a href='#' class='clickable' onClick='aksi({$row->id_kurir},\"delete\")'>Delete</a></li>
+                               </ul>
+                        </div>";
+                $row->aksi = $aksi;
+                $res[] = $row;
+            }
+        $data['data'] =$res;
+        print_r(json_encode($data));
+    }
 }
