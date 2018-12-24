@@ -23,7 +23,7 @@ class Kurir extends CI_Controller {
         //$this->load->view('list_kategori');
         $kurir = $this->Kurir_Md->allKurir();
         $data['kurir'] = $kurir;
-        $this->load->view('kurir/list_kurir',$data);
+        $this->load->viewku('kurir/list_kurir',$data);
     }
 
     public function __construct() {

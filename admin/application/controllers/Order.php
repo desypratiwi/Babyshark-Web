@@ -22,7 +22,7 @@ class Order extends CI_Controller {
 	{
                 $orders = $this->Order_Md->allOrders();
                 $data['order'] =$orders;
-		$this->load->view('order/list_order',$data);
+		$this->load->viewku('order/list_order',$data,false);
 	}
 	public function __construct(){
 		parent::__construct();
