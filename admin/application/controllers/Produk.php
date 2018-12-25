@@ -10,7 +10,7 @@
 		public function index(){
 			$this->load->model('customer_model');
 			$temp['c'] = $this->customer_model->getAll();
-			$this->load->view('produk/halaman_produk',$temp);
+			$this->load->viewku('produk/halaman_produk',$temp);
 		}
 		
 		public function show($cus1=''){

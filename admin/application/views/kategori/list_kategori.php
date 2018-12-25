@@ -3,7 +3,7 @@
 <script src="<?php echo base_url() . 'asset/js/'; ?>dataTables.bootstrap.min.js" type="text/javascript"></script>
 <link href='<?php echo base_url() . 'asset/css/'; ?>jquery.dataTables.min.css' rel='stylesheet' type='text/css'>
 <div>
-    <div ><button type="button" class="btn btn-primary btn-md pull-right" style="margin-bottom: 20px">
+    <div ><button type="button" class="btn btn-primary btn-md pull-right" data-toggle="modal" data-target="#kategoriModalLong" style="margin-bottom: 20px">
             <span class="glyphicon glyphicon-plus"></span>New Category </button>
     </div>
     

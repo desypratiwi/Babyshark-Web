@@ -1,5 +1,5 @@
 <?php
-	class m_addbrand extends CI_model{
+	class M_addbrand extends CI_model{
 		public function __construct(){
 			parent:: __construct();
 			$this->load->database();

@@ -3,7 +3,7 @@
 <script src="<?php echo base_url() . 'asset/js/'; ?>dataTables.bootstrap.min.js" type="text/javascript"></script>
 <link href='<?php echo base_url() . 'asset/css/'; ?>jquery.dataTables.min.css' rel='stylesheet' type='text/css'>
 <div>
-    <div ><button type="button" class="btn btn-primary btn-md pull-right" style="margin-bottom: 20px">
+    <div ><button type="button" class="btn btn-primary btn-md pull-right" style="margin-bottom: 20px" data-toggle="modal" data-target="#kurirModal">
             <span class="glyphicon glyphicon-plus"></span>New Kurir </button>
     </div>
     
@@ -11,6 +11,7 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Logo</th>
                 <th>Perusahaan</th>
                 <th>Telp Perusahaan</th>
                 <th>Email</th>
@@ -23,6 +24,7 @@
         <tfoot>
             <tr>
                 <th>Id</th>
+                <th>Logo</th>
                 <th>Perusahaan</th>
                 <th>Telp Perusahaan</th>
                 <th>Email</th>
@@ -39,6 +41,7 @@
            ajax: "kurir/all_kurir",
            "columns":[
                {"data":"id_kurir"},
+               {"data":"logo_perusahaan"},
                {"data":"nama_perusahaan"},
                {"data":"telp_perusahaan"},
                {"data":"email_perusahaan"},
@@ -47,8 +50,8 @@
             "columnDefs": [
                 {
                     "targets": [0],
-                    "visible": false,
-                    "searchable": false
+                    "visible": true,
+                    "searchable": true
                 }
             ]
         });

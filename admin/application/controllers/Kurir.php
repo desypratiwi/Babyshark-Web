@@ -24,6 +24,7 @@ class Kurir extends CI_Controller {
         $kurir = $this->Kurir_Md->allKurir();
         $data['kurir'] = $kurir;
         $this->load->viewku('kurir/list_kurir',$data);
+        $this->load->view('kurir/form_kurir');
     }
 
     public function __construct() {
@@ -37,7 +38,7 @@ class Kurir extends CI_Controller {
     }
 
     public function show() {
-        $this->load->view('kurir/form_kurir');
+        $this->load->viewku('kurir/form_kurir');
 //            $this->load->view('success_page');
     }
 
@@ -48,7 +49,7 @@ class Kurir extends CI_Controller {
             $filename = trim($data['nama_perusahaan']);
             $upload = $this->do_upload($filename);
             if($upload['sukses']){
-                $url = "admin/asset/kurir/".$upload['upload_data']['file_name'];
+                $url = "asset/kurir/".$upload['upload_data']['file_name'];
                 $data['logo_perusahaan'] = $url;
             }else{
                 
@@ -91,6 +92,8 @@ class Kurir extends CI_Controller {
         $data = $this->Kurir_Md->allKurir();
         
          foreach ($data as $row) {
+                $gambar = base_url($row->logo_perusahaan);
+                $row->logo_perusahaan= "<img src='{$gambar}'/>";
                 $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
                            <ul class='dropdown-menu pull-right text-left'>
                            <li><a href='#' class='clickable' onClick='aksi({$row->id_kurir},\"show\")'>View</a></li>

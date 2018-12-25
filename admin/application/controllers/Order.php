@@ -34,6 +34,21 @@ class Order extends CI_Controller {
             print_r($data);
         }
         
-        
+        function all_order(){
+            $data = $this->Order_Md->allOrders();
+            foreach($data as $row){
+                $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
+                           <ul class='dropdown-menu pull-right text-left'>
+                           <li><a href='#' class='clickable' onClick='aksi({$row->id_order},\"show\")'>View</a></li>
+                           <li><a href='#' class='clickable' onClick='aksi({$row->id_order},\"edit\")'>Edit</a></li>
+                           <li><a href='#' class='clickable' onClick='aksi({$row->id_order},\"delete\")'>Delete</a></li>
+                               </ul>
+                        </div>";
+                $row->aksi = $aksi;
+                $res[] = $row;
+            }
+            $hasil['data'] = $res;
+            print_r(json_encode($hasil));
+        }
 		
 }

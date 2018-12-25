@@ -9,8 +9,8 @@
 		        <li id="menu-home" ><a href="<?php echo site_url("home")?>"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
 			<li id="menu-user" ><a href="<?php echo site_url("user")?>"><i class="fa fa-book"></i><span>User</span></a></li>
                         <li id="menu-user" ><a href="<?php echo site_url("kurir")?>"><i class="fa fa-envelope"></i><span>Kurir</span></a></li>
-                        <li id="menu-user" ><a href="<?php echo site_url("kategori")?>"><i class="fa fa-file-text"></i><span>Kategori</span></a></li>
-		        <li id="menu-academico" ><a href="#"><i class="fa fa-file-text"></i><span>Halaman</span><span class="fa fa-angle-right" style="float: right"></span></a>
+                        <li id="menu-user" ><a href="<?php echo site_url("order")?>"><i class="fa fa-shopping-cart"></i><span>Order</span></a></li>
+<!--		        <li id="menu-academico" ><a href="#"><i class="fa fa-file-text"></i><span>Halaman</span><span class="fa fa-angle-right" style="float: right"></span></a>
 		          <ul id="menu-academico-sub" >
 		          	 <li id="menu-academico-boletim" ><a href="login.html">Login</a></li>
 		            <li id="menu-academico-avaliacoes" ><a href="signup.html">Sign Up</a></li>		           
@@ -23,15 +23,16 @@
 			            <li id="menu-academico-avaliacoes" ><a href="inbox.html">Inbox</a></li>
 			            <li id="menu-academico-boletim" ><a href="inbox-details.html">Compose email</a></li>
 		             </ul>
-		        </li>
+		        </li>-->
 		         
-		         <li><a href="#"><i class="fa fa-shopping-cart"></i><span>E-Commerce</span><span class="fa fa-angle-right" style="float: right"></span></a>
+		         <li><a href="#"><i class="fa fa-book"></i><span>Produk</span><span class="fa fa-angle-right" style="float: right"></span></a>
 		         	<ul id="menu-academico-sub" >
-			            <li id="menu-academico-avaliacoes" ><a href="product.html">Product</a></li>
-			            <li id="menu-academico-boletim" ><a href="price.html">Price</a></li>
+			            <li id="menu-academico-avaliacoes" ><a href="<?php echo site_url("produk")?>">Product</a></li>
+                                    <li id="menu-academico-boletim" ><a href="<?php echo site_url("c_addbrand")?>">Brand</a></li>
+                                    <li id="menu-mensagens" ><a href="<?php echo site_url("kategori")?>">Kategori</a></li>
+			            <!--<li id="menu-academico-boletim" ><a href="price.html">Price</a></li>-->
 		             </ul>
 		         </li>
-		      </ul>
 		    </div>
 	 </div>
 	<div class="clearfix"> </div>

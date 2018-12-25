@@ -1,7 +1,4 @@
-<?php $this->load->view('admin_layout/header'); ?>
 
-
-<div class="inner-block">
 <!--KONTEN-->
 <form action="/Git/Babyshark-Web/admin/index.php/c_addbrand/addBrand" method="POST">
 	<table>
@@ -18,5 +15,3 @@
 <!--climate end here-->
 </div>
 
-
-<?php $this->load->view('admin_layout/footer'); ?>

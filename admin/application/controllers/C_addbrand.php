@@ -1,7 +1,7 @@
 <?php 
 	defined('BASEPATH') OR exit('No direct script access allowed');
 
-	class c_addbrand extends CI_Controller {
+	class C_addbrand extends CI_Controller {
 		public function __construct(){
 			parent::__construct();
 			$this->load->model('m_addbrand');
@@ -10,7 +10,7 @@
 		
 		public function index(){
 			
-			$this->load->view('produk/v_addbrand');
+			$this->load->viewku('produk/v_addbrand');
 		}
 		
 		public function addBrand(){	
