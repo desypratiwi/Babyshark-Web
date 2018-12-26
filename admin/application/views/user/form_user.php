@@ -1,11 +1,11 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="kurirModal" tabindex="-1" role="dialog" aria-labelledby="kurirModalTitle" aria-hidden="true">
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="kurirModalTitle">Kurir</h5>
+                <h5 class="modal-title" id="userModalTitle">Detail User</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -14,12 +14,12 @@
                 <form id="form_kurir" method="post" enctype="multipart/form-data" action="<?php echo site_url('kurir/form/tambah') ?>">
                     <?php if (isset($error)) print_r($error); ?>
                     <div class="form-group">
-                        <label for="nama">Nama Perusahaan Kurir</label>
-                        <input class="form-control" type="text" id="nama" name="nama_perusahaan" placeholder="Isikan Nama Perusahaann Kurir"/>
+                        <label for="username">Username</label>
+                        <input class="form-control" type="text" id="username" name="username" placeholder="Isikan Nama Perusahaann Kurir"/>
                     </div>
                     <div class="form-group">
-                        <label for="deskripsi">Deskripsi Perusahaan Kurir</label>
-                        <input class="form-control" type="textarea" id="deskripsi" name="deskripsi_perusahaan" placeholder="Isikan Deskripsi Perusahaan Kurir"/>
+                        <label for="nama">Nama</label>
+                        <input class="form-control" type="text" id="nama" name="nama" placeholder="Isikan Deskripsi Perusahaan Kurir"/>
                     </div>
                     <div class="form-group">
                         <label for="telp">Telp Perusahaan Kurir</label>

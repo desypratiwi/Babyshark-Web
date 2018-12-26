@@ -34,9 +34,12 @@
     </table>
 
 </div>
-
+<div class="container-kmodal">
+    
+</div>
 <script>
     $(document).ready(function () {
+        //$(".container-kmodal").append("<p>test</p>");
         $('#tabel-kurir').DataTable({
            ajax: "kurir/all_kurir",
            "columns":[
@@ -57,7 +60,19 @@
         });
            
     });
-    function aksi() {
-
+    function formKurir(id_kurir,aksi) {
+       if(aksi!== "delete"){
+        $.post("kurir/"+aksi,{id:id_kurir},function(data){
+            $("#kurirModal").remove();
+            $(".container-kmodal").append(data);
+            $("#kurirModal").modal('show');
+            //alert(data);
+        });   
+       }else{
+           $.post("kurir/"+aksi,{id:id_kurir},function(data){
+               
+            });
+            window.location= "kurir";
+       }  
     }
 </script>

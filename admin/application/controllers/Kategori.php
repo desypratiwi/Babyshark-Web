@@ -30,9 +30,6 @@ class Kategori extends CI_Controller {
         $this->load->model('Kategori_Md');
     }
 
-    public function show() {
-        $this->load->view('kategori/form_kategori');
-    }
 
     public function form($action) {
         if ($action == "tambah") {
@@ -80,9 +77,9 @@ class Kategori extends CI_Controller {
         foreach ($kat as $row) {
             $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
                            <ul class='dropdown-menu pull-right text-left'>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_kategori},\"show\")'>View</a></li>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_kategori},\"edit\")'>Edit</a></li>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_kategori},\"delete\")'>Delete</a></li>
+                           <li><a href='#' class='clickable' onClick='formKategori({$row->id_kategori},\"show\")'>View</a></li>
+                           <li><a href='#' class='clickable' onClick='formKategori({$row->id_kategori},\"edit\")'>Edit</a></li>
+                           <li><a href='#' class='clickable' onClick='formKategori({$row->id_kategori},\"delete\")'>Delete</a></li>
                                </ul>
                         </div>";
             $row->aksi = $aksi;
@@ -90,6 +87,22 @@ class Kategori extends CI_Controller {
         }
         $data['data'] = $res;
         print_r(json_encode($data));
+    }
+    function show(){
+        $id = $this->input->post('id');
+        $hasil = $this->Kategori_Md->getKategori($id);
+        $data['kategori'] = $hasil;
+        $this->load->view('kategori/form_kategori',$data);
+    }
+    function edit(){
+        $id = $this->input->post('id');
+        $hasil = $this->Kategori_Md->getKategori($id);
+        $data['kategori'] = $hasil;
+        $this->load->view('kategori/form_kategori',$data);
+    }
+    function delete(){
+        $id = $this->input->post('id');
+        $hasil = $this->Kategori_Md->deleteKategori($id);
     }
 
 }

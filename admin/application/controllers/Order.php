@@ -29,19 +29,15 @@ class Order extends CI_Controller {
 		$this->load->helper('url');
                 $this->load->model('Order_Md');
 	}
-        public function show($id){
-            $data = $this->Order_Md->getOrder($id);
-            print_r($data);
-        }
+        
         
         function all_order(){
             $data = $this->Order_Md->allOrders();
             foreach($data as $row){
                 $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
                            <ul class='dropdown-menu pull-right text-left'>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_order},\"show\")'>View</a></li>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_order},\"edit\")'>Edit</a></li>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_order},\"delete\")'>Delete</a></li>
+                           <li><a href='#' class='clickable' onClick='formOrder({$row->id_order},\"show\")'>View</a></li>
+                           <li><a href='#' class='clickable' onClick='formOrder({$row->id_order},\"edit\")'>Edit</a></li>
                                </ul>
                         </div>";
                 $row->aksi = $aksi;
@@ -50,5 +46,18 @@ class Order extends CI_Controller {
             $hasil['data'] = $res;
             print_r(json_encode($hasil));
         }
+        function show(){
+            $id= $this->input->post('id');
+            $hasil = $this->Order_Md->getOrder($id);
+            $data['order'] = $hasil;
+            $this->load->view('order/form_order',$data);
+        } 
+        function edit(){
+            $id= $this->input->post('id');
+            $hasil = $this->Order_Md->getOrder($id);
+            $data['order'] = $hasil;
+            $this->load->view('order/form_order',$data);
+        }
+        
 		
 }

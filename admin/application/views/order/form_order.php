@@ -1,11 +1,11 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="kurirModal" tabindex="-1" role="dialog" aria-labelledby="kurirModalTitle" aria-hidden="true">
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="kurirModalTitle">Kurir</h5>
+                <h5 class="modal-title" id="orderModalTitle">Detail Order</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

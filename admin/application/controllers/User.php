@@ -22,22 +22,30 @@ class User extends CI_Controller {
 	{
                 $users= $this->User_Md->allUsers();
                 $data['user']= $users;
-		$this->load->viewku('user/list_user',$data);
+		$data['all'] = $this->load->viewku('user/list_user',$data);
+                $this->load->view('user/form_user',$data);
 	}
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper('url');
                 $this->load->model('User_Md');
 	}
+        public function list_user(){
+                $users= $this->User_Md->allUsers();
+                $data['user']= $users;
+		$data['all'] = $this->load->view('user/list_user',$data);
+                $this->load->view('user/form_user',$data);
+                //$this->load->view('user/form_user');
+        }
         public function all_user(){
             $data = $this->User_Md->allUsers();
             
             foreach ($data as $row) {
                 $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
                            <ul class='dropdown-menu pull-right text-left'>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_user},\"show\")'>View</a></li>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_user},\"edit\")'>Edit</a></li>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_user},\"delete\")'>Delete</a></li>
+                           <li><a href='#' class='clickable' onClick='formUser(\"{$row->username}\",\"show\")'>View</a></li>
+                           <li><a href='#' class='clickable' onClick='formUser(\"{$row->username}\",\"edit\")'>Edit</a></li>
+                           <li><a href='#' class='clickable' onClick='formUser(\"{$row->username}\",\"delete\")'>Delete</a></li>
                                </ul>
                         </div>";
                 $row->aksi = $aksi;
@@ -45,6 +53,28 @@ class User extends CI_Controller {
             }
             $hasil['data'] = $res;
             print_r(json_encode($hasil));
+        }
+        public function show(){
+            //print_r($this->input->post());
+            $data = $this->input->post();
+            $id = $data['id'];
+            $user = $this->User_Md->getDetailUser($id);
+            $data['user']= $user;
+            $this->load->view('user/form_user',$data);
+        }
+        public function edit(){
+            $data = $this->input->post();
+            $id = $data['id'];
+            $user = $this->User_Md->getDetailUser($id);
+            $data['user']= $user;
+            $this->load->view('user/form_user',$data);
+        }
+        public function delete(){
+            $data = $this->input->post();
+            $id = $data['id'];
+            $this->User_Md->deleteUser($id);
+            //$this->list_user();
+            //redirect(site_url('user'));
         }
        
 		

@@ -2,7 +2,7 @@
 <script src="<?php echo base_url() . 'asset/js/'; ?>jquery.dataTables.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url() . 'asset/js/'; ?>dataTables.bootstrap.min.js" type="text/javascript"></script>
 <link href='<?php echo base_url() . 'asset/css/'; ?>jquery.dataTables.min.css' rel='stylesheet' type='text/css'>
-<div>
+<div id="container-list-kategori">
     <div ><button type="button" class="btn btn-primary btn-md pull-right" data-toggle="modal" data-target="#kategoriModalLong" style="margin-bottom: 20px">
             <span class="glyphicon glyphicon-plus"></span>New Category </button>
     </div>
@@ -47,7 +47,18 @@
         });
            
     });
-    function aksi() {
-
+    function formKategori(id_kategori,aksi) {
+        if(aksi!=="delete"){
+            $.post("kategori/"+aksi,{id:id_kategori},function(data){
+                $("#kategoriModalLong").remove();
+                $("#container-list-kategori").append(data);
+                $("#kategoriModalLong").modal('show');
+            });
+        }else{
+            $.post("kategori/"+aksi,{id:id_kategori},function(data){
+                
+            })
+            window.location = "kategori";
+        }
     }
 </script>

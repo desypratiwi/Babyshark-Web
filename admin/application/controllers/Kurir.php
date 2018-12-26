@@ -37,10 +37,6 @@ class Kurir extends CI_Controller {
      
     }
 
-    public function show() {
-        $this->load->viewku('kurir/form_kurir');
-//            $this->load->view('success_page');
-    }
 
     public function form($action, $id = -1) {
         
@@ -96,9 +92,9 @@ class Kurir extends CI_Controller {
                 $row->logo_perusahaan= "<img src='{$gambar}'/>";
                 $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
                            <ul class='dropdown-menu pull-right text-left'>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_kurir},\"show\")'>View</a></li>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_kurir},\"edit\")'>Edit</a></li>
-                           <li><a href='#' class='clickable' onClick='aksi({$row->id_kurir},\"delete\")'>Delete</a></li>
+                           <li><a href='#' class='clickable' onClick='formKurir({$row->id_kurir},\"show\")'>View</a></li>
+                           <li><a href='#' class='clickable' onClick='formKurir({$row->id_kurir},\"edit\")'>Edit</a></li>
+                           <li><a href='#' class='clickable' onClick='formKurir({$row->id_kurir},\"delete\")'>Delete</a></li>
                                </ul>
                         </div>";
                 $row->aksi = $aksi;
@@ -106,5 +102,21 @@ class Kurir extends CI_Controller {
             }
         $data['data'] =$res;
         print_r(json_encode($data));
+    }
+    function show(){
+        $id = $this->input->post('id');
+        $hasil = $this->Kurir_Md->getKurir($id);
+        $data['kurir'] = $hasil;
+        $this->load->view('kurir/form_kurir',$data);
+    }
+    function edit(){
+        $id = $this->input->post('id');
+        $hasil = $this->Kurir_Md->getKurir($id);
+        $data['kurir'] = $hasil;
+        $this->load->view('kurir/form_kurir',$data);
+    }
+    function delete($id){
+        $id = $this->input->post('id');
+        $hasil = $this->Kurir_Md->deleteKurir($id);
     }
 }

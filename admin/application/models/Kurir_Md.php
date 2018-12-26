@@ -18,6 +18,10 @@ class Kurir_Md extends CI_model {
     public function addKurir($data) {
         return $this->db->insert('tb_mst_kurir', $data);
     }
+    public function deleteKurir($id){
+        $this->db->where('id_kurir',$id);
+        return $this->db->delete("tb_mst_kurir");
+    }
 
 }
 
