@@ -15,9 +15,9 @@
 		
 		public function addBrand(){	
 			$value = array(
-        		'BrandID' => $this->input->post('id'),
-        		'BrandName' => $this->input->post('name'),
-        		'BrandDesc' => $this->input->post('desc')
+        		'id_brand' => $this->input->post('id'),
+        		'nama_brand' => $this->input->post('name'),
+        		'deskripsi_brand' => $this->input->post('desc')
         	);
 			$this->m_addbrand->insertBrand($value);
 			$this->load->view('v_addbrand');

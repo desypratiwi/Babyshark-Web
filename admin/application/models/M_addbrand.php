@@ -6,7 +6,7 @@
 		}
 		
 		public function insertBrand($data){
-			$this->db->insert('brand',$data);
+			$this->db->insert('tb_mst_brand',$data);
 		}
 		
 	}
