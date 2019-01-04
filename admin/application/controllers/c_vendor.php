@@ -20,7 +20,6 @@
 		}
 
 		public function upVendor(){	
-			
 			$value = array(
         		
         		'username' => $this->input->post('nama_o'),
@@ -34,8 +33,8 @@
         	);
         	$key = $this->input->post('id');
 			$this->m_vendor->updateVendor($value,$key);
-			//redirect('c_vendor/update/1','refresh');
-			$this->load->view('vendor/profiler');
+			redirect('c_vendor/update/1','refresh');
+			//$this->load->view('vendor/profiler');
 		}
 	}
 ?>
