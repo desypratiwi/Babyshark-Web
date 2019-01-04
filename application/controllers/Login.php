@@ -27,6 +27,7 @@
 			 $hasilcekRole = $this->customer_model->cekRole($hasil['email']);
 			//print_r($hasilcekRole);
 				$this->session->set_userdata('isLogin','udahLogin');
+				$this->session->set_userdata('username',$hasil['email']);
 				if($hasilcekRole['role'] == 3){
 					redirect (site_url('home'));
 					//echo "masuk ke home";

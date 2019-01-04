@@ -38,8 +38,8 @@ BAGIAN 4 : Raham
 
 -Vendor : 
 Update order
-Tambah brand
-Update detail toko
+Tambah brand (Kurang foto Logo)
+Update detail toko (Kurang foto Logo)
 Pembeli : 
 Add to cart
 Pencarian 
