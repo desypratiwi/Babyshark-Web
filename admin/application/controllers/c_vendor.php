@@ -7,6 +7,7 @@
 			$this->load->model('m_vendor');
 			$this->load->helper('url');
 			$this->load->helper('form');
+			$this->output->enable_profiler(TRUE);
 		}
 		
 		public function index(){
@@ -19,8 +20,9 @@
 		}
 
 		public function upVendor(){	
+			
 			$value = array(
-        		'id_vendor' => $this->input->post('id'),
+        		
         		'username' => $this->input->post('nama_o'),
         		'nama_vendor' => $this->input->post('nama_v'),
 				'nama_owner' => $this->input->post('alamat'),
@@ -30,9 +32,10 @@
         		'email_vendor' => $this->input->post('email')
 
         	);
-			$this->m_addbrand->updateVendor($value);
-			$this->load->view('vendor/v_updateVendor');
+        	$key = $this->input->post('id');
+			$this->m_vendor->updateVendor($value,$key);
+			//redirect('c_vendor/update/1','refresh');
+			$this->load->view('vendor/profiler');
 		}
-		
 	}
 ?>

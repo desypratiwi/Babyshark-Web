@@ -1,5 +1,3 @@
-<?php $this->load->view('admin_layout/header'); ?>
-
 
 <div class="inner-block">
 <!--KONTEN-->
@@ -17,5 +15,3 @@
 <!--climate start here-->
 <!--climate end here-->
 
-
-<?php $this->load->view('admin_layout/footer'); ?>
