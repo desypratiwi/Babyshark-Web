@@ -16,7 +16,6 @@
 </div>
 <!--climate start here-->
 <!--climate end here-->
-</div>
 
 
 <?php $this->load->view('admin_layout/footer'); ?>

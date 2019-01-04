@@ -12,7 +12,7 @@
 		public function getVendor($data){
 			$this->db->where('id_vendor', $data);
 			$hasil = $this->db->get('tb_mst_vendor');
-			return $hasil->result();
+			return $hasil->row();
 		}
 	}
 ?>

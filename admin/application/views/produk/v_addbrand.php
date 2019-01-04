@@ -13,5 +13,4 @@
 </div>
 <!--climate start here-->
 <!--climate end here-->
-</div>
 

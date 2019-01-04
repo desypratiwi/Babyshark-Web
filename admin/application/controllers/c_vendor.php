@@ -6,14 +6,18 @@
 			parent::__construct();
 			$this->load->model('m_vendor');
 			$this->load->helper('url');
+			$this->load->helper('form');
 		}
 		
 		public function index(){
-			$id = $this->input->get('1');
-			$temp['data'] = $this->m_vendor->getVendor($id);
-			$this->load->view('vendor/v_updateVendor',$temp);
+			
 		}
 		
+		public function update($pId){
+			$temp['data'] = $this->m_vendor->getVendor($pId);
+			$this->load->viewku('vendor/v_updateVendor',$temp);
+		}
+
 		public function upVendor(){	
 			$value = array(
         		'id_vendor' => $this->input->post('id'),

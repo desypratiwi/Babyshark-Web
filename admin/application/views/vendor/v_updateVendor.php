@@ -1,9 +1,9 @@
-<?php $this->load->view('admin_layout/header'); ?>
 
 <!--KONTEN-->
 <form action="/Git/Babyshark-Web/admin/index.php/c_addbrand/addBrand" method="POST">
 	<table>
-	<tr><td>ID:</td><td><input type="text" name="id" disabled=1 value=<?php echo $temp->id_vendor; ?>></td></tr>
+
+	<tr><td>ID:</td><td><input type="text" name="id" disabled=1 value=<?php echo $data->id_vendor; ?>></td></tr>
 	<tr><td>Nama Vendor:</td><td><input type="text" name="nama_v"></td></tr>
 	<tr><td>Nama Owner:</td><td><input type="text" name="nama_o"></td></tr>
 	<tr><td>Telp:</td><td><input type="text" name="telp"></td></tr>
@@ -18,6 +18,3 @@
 </div>
 <!--climate start here-->
 <!--climate end here-->
-</div>
-
-<?php $this->load->view('admin_layout/footer'); ?>
