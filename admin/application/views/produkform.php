@@ -306,13 +306,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--inner block start here-->
 <div class="inner-block">
 <form action='/babyshark-web/admin/index.php/uploadproduk/tambahProduct' method='POST'>
-Nama Produk : <input type="text" name="namaproduk"><br>
+Nama Produk : <input type="text" name="nama_produk">
+<br>
+Deskripsi Produk : <input type="text" name="deskripsi_produk">
+<br>
 Kategori : 
 <select name="kategori">
-	<option value="boy">Boy</option>
-	<option value="girl">Girl</option>
+	<option value="111">Boy</option>
+	<option value="222">Girl</option>
 </select><br> 
-Harga : <input type="text" name="harga"><br>
+Harga Awal: <input type="text" name="harga_awal">
+<br>
+Harga Jual: <input type="text" name="harga_jual">
+<br>
+Stok : <input type="text" name="stok">
+<br>
+Diskon : <input type="text" name="diskon">
+<br>
+Produk Tersedia : <input type="text" name="produk_tersedia">
+<br>
+Catatan : <input type="text" name="catatan">
+<br>
+Brand : 
+<select name="brand">
+	<option value="111">Coco Channel</option>
+	<option value="222">Giordani Gold</option>
+</select><br> 
 Upload Foto : 
 <input type="file" name="userfile" size="20" />
 

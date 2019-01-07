@@ -5,7 +5,7 @@
 			$this->load->database();
 		}
 		public function insProduct($data){
-		$this->db->insert('produk',$data);
+		$this->db->insert('tb_mst_produk',$data);
 		                                                                   
 		}
 		

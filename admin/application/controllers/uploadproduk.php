@@ -22,13 +22,26 @@ class uploadproduk extends CI_Controller {
 	
 	function tambahProduct(){
 		$namaproduk = $this->input->post('namaproduk');
+		$deskripsi = $this->input->post('deskripsiproduk');
 		$kategori = $this->input->post('kategori');
-		$harga = $this->input->post('harga');
+		$hargaawal = $this->input->post('hargaawal');
+		$hargajual = $this->input->post('hargajual');
+		$stok = $this->input->post('stok');
+		$diskon = $this->input->post('diskon');
+		$produk_tersedia = $this->input->post('produk_tersedia');
+		$catatan = $this->input->post('catatan');
+		$brand = $this->input->post('brand');
 		
 		$data = array(
-			'nama' => $namaproduk,
-			'kategori' => $kategori,
-			'harga' => $harga
+			'nama_produk' => $namaproduk,
+			'deskripsi_produk' => $deskripsi,
+			'id_kategori' => $kategori,
+			'harga_awal' => $hargaawal,
+			'harga_jual' => $hargajual,
+			'stok' => $stok,
+			'diskon' => $diskon,
+			'catatan' => $catatan,
+			'id_brand' => $brand
 			);
 		$this->customer_model->insProduct($data);
 		$this->load->view('produkform');
