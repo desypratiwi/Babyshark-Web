@@ -5,18 +5,18 @@
 		public function __construct(){
 			parent::__construct();
 			$this->load->helper('url');
+			$this->load->helper('form');
 		}
 		
 		public function index(){
-			$this->load->model('customer_model');
-			$temp['c'] = $this->customer_model->getAll();
-			$this->load->view('produk/halaman_produk',$temp);
+			
+			$this->load->view('produkform');
 		}
 		
 		public function show($cus1=''){
 			$temp['id'] = $cus1;
 			
-			$this->load->view('produk/halaman_produk',$temp);
+			$this->load->view('produkform');
 		}
 		
 	}
