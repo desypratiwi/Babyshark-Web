@@ -52,45 +52,46 @@
 							</div>
 						</div><!--/category-products--></div>
 						
-  <div class="col-lg-8">.<h4>Profil Saya</h4><form class="form-horizontal">
+  <div class="col-lg-8">.<h4>Profil Saya</h4><form class="form-horizontal" method="post" action="<?php echo site_url('akun/update')?>">
+
+  <input type="hidden" value="<?php echo $user->id_user;?>" name="id">
 							  <div class="form-group">
 								<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 								<div class="col-sm-10">
-								  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+								  <input type="text" name="email" class="form-control" id="inputEmail3" name="email" placeholder="Email" value ="<?php echo $user->email;?>">
 								</div>
 							  </div>
 							  <div class="form-group">
-								<label for="inputNotelp3" class="col-sm-2 control-label">No Telp</label>
+								<label for="inputNotelp3" class="col-sm-2 control-label" >No Telp</label>
 								<div class="col-sm-10">
-								  <input type="no_telp" class="form-control" id="inputNotelp3" placeholder="No Telp">
+								  <input type="text" name="no_telp" class="form-control" name="no_telp" id="inputNotelp3" placeholder="No Telp" value ="<?php echo $user->no_telp;?>">
 								</div>
 							  </div>
 							  <div class="form-group">
 									<label for="inputNamatoko" class="col-sm-2 control-label">Nama Toko</label>
 									<div class="col-sm-10">
-										<input type="nama_toko" class="form-control" id="inputNamatoko" placeholder="NamaToko">
+										<input type="text" name="nama_toko" class="form-control" id="inputNamatoko" placeholder="NamaToko" value ="<?php echo $user->nama_toko;?>">
 								</div>
 								</div>
 								<div class="form-group">
-									<label for="inputJK" class="col-sm-2 control-label">Jenis Kelamin</label>
-									<div class="radio col-lg-2">
-									  <label>
-										<input type="radio" name="optionsRadios" id="lakilaki" value="lakilaki" checked>
-										Laki-laki
-									  </label>
-									</div>
-									<div class="radio">
-									  <label>
-										<input type="radio" name="optionsRadios" id="perempuan" value="perempuan">
-										Perempuan
-									  </label>
-									</div>
+									<label for="inputTL" class="col-sm-2 control-label">Jenis Kelamin</label>
+									<div class="col-sm-10">
+									<select name="jk">
+										<option value="L" <?php if ($user->jk=="L"){echo 'selected';}?> >
+											laki-laki
+										</option>
+										<option value="P" <?php if ($user->jk=="P"){echo 'selected';}?>>
+											Perempuan
+										</option>
+									</select>
+									
+									</div>	
 								</div>
 								<div class="form-group">
 									<label for="inputTL" class="col-sm-2 control-label">Tanggal Lahir</label>
 									<div class="col-sm-10">
 										<div class="input-group date" data-provide="datepicker">
-											<input type="text" class="form-control">
+											<input type="text" name="tgl_lahir" class="form-control" value ="<?php echo $user->tgl_lahir;?>">
 											<div class="input-group-addon">
 												<span class="glyphicon glyphicon-th"></span>
 											</div>

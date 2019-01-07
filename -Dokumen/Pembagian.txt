@@ -1,5 +1,5 @@
 ---------------------------
-BAGIAN 1 : Yones Prada Pratasya
+BAGIAN 1 : Yones
 
 
 -Vendor : 
@@ -14,7 +14,7 @@ Login
 Verifikasi pembayaran
 Upload banner promo
 ---------------------------
-BAGIAN 2 : Nadya Kusuma Dewi
+BAGIAN 2 : Nadya
 
 -Vendor : 
 Menambahkan Produk
@@ -23,7 +23,7 @@ Pencarian
 Edit detail item
 Tambah Kurir
 ---------------------------
-BAGIAN 3 : Galih Pratama Adji
+BAGIAN 3 : Galih
 
 -Admin :
 Tambah kurir
@@ -34,17 +34,18 @@ Update status order
 Lihat user
 Ubah policy (footer)
 ---------------------------
-BAGIAN 4 : Raham Zulfikar Al Bakhri
+BAGIAN 4 : Raham
 
 -Vendor : 
 Update order
-Tambah brand
-Update detail toko
+Tambah brand (Kurang foto Logo)
+Update detail toko (Kurang foto Logo)
 Pembeli : 
 Add to cart
 Pencarian 
 ---------------------------
-BAGIAN 5 : Desy Rahmawati
+BAGIAN 5 : Desy
+
 
 -Pembeli : 
 Pembayaran 
