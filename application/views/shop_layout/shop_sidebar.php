@@ -74,7 +74,7 @@
 							<?php foreach($kategori as $row){ ?> 
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#"><?php echo $row->nama_kategori; ?></a></h4>
+									<h4 class="panel-title"><a href="<?php echo base_url();?>index.php/c_shop/searchk/<?php echo $row->id_kategori; ?>"><?php echo $row->nama_kategori; ?></a></h4>
 								</div>
 							</div>
 						<?php } ?>
@@ -85,7 +85,7 @@
 							<div class="brands-name">
 								<ul class="nav nav-pills nav-stacked">
 									<?php foreach($brand as $row){ ?>
-										<li><a href="#"><?php echo $row->nama_brand; ?></a></li>
+										<li><a href="<?php echo base_url();?>index.php/c_shop/searchb/<?php echo $row->id_brand; ?>"><?php echo $row->nama_brand; ?></a></li>
 									<?php } ?>
 								</ul>
 							</div>
