@@ -1,6 +1,3 @@
-<?php $this->load->view('shop_layout/shop_header'); ?>
-<?php $this->load->view('shop_layout/shop_sidebar'); ?>
-
 
 				<div class="col-sm-9 padding-right">
 					<div class="features_items"><!--features_items-->
@@ -162,5 +159,3 @@
 					
 					
 				</div>
-
-<?php $this->load->view('shop_layout/shop_footer'); ?>
