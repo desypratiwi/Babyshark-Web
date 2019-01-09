@@ -58,7 +58,7 @@
             $.post("kategori/"+aksi,{id:id_kategori},function(data){
                 
             })
-            window.location = "kategori";
+//            window.location = "kategori";
         }
     }
 </script>

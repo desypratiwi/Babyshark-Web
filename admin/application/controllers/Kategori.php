@@ -74,10 +74,10 @@ class Kategori extends CI_Controller {
 
     function all_kategori() {
         $kat = $this->Kategori_Md->allKategori();
+        $res = "";
         foreach ($kat as $row) {
             $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
                            <ul class='dropdown-menu pull-right text-left'>
-                           <li><a href='#' class='clickable' onClick='formKategori({$row->id_kategori},\"show\")'>View</a></li>
                            <li><a href='#' class='clickable' onClick='formKategori({$row->id_kategori},\"edit\")'>Edit</a></li>
                            <li><a href='#' class='clickable' onClick='formKategori({$row->id_kategori},\"delete\")'>Delete</a></li>
                                </ul>
@@ -85,7 +85,9 @@ class Kategori extends CI_Controller {
             $row->aksi = $aksi;
             $res[] = $row;
         }
-        $data['data'] = $res;
+        $data['data'] = array();
+        if($res)
+            $data['data'] = $res;
         print_r(json_encode($data));
     }
     function show(){
@@ -98,6 +100,7 @@ class Kategori extends CI_Controller {
         $id = $this->input->post('id');
         $hasil = $this->Kategori_Md->getKategori($id);
         $data['kategori'] = $hasil;
+        $data['aksi'] = "edit";
         $this->load->view('kategori/form_kategori',$data);
     }
     function delete(){

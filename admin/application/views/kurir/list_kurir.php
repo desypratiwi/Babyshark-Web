@@ -62,6 +62,7 @@
     });
     function formKurir(id_kurir,aksi) {
        if(aksi!== "delete"){
+
         $.post("kurir/"+aksi,{id:id_kurir},function(data){
             $("#kurirModal").remove();
             $(".container-kmodal").append(data);

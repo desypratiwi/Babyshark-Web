@@ -48,8 +48,11 @@ class Kurir extends CI_Controller {
                 $url = "asset/kurir/".$upload['upload_data']['file_name'];
                 $data['logo_perusahaan'] = $url;
             }else{
+                print_r($upload);
+                //redirect(base_url());
                 
             }
+            
             $hasil = $this->Kurir_Md->addKurir($data);
             if ($hasil) {
 //                echo "Tambah Sukses";
@@ -57,12 +60,21 @@ class Kurir extends CI_Controller {
             } else {
                 echo "Tambah Gagal";
             }
+        }else{
+            $data = $this->input->post();
+            $hasil = $this->Kurir_Md->editKurir($data,$data['id_kurir']);
+            if($hasil){
+                redirect(site_url('kurir'));
+            }else{
+                
+            }
+            
         }
     }
 
     public function do_upload($name) {
         $config['upload_path'] = './asset/kurir/';
-        $config['allowed_types'] = 'gif|jpg|png';
+        $config['allowed_types'] = 'jpeg|gif|jpg|png';
         $config['max_size'] = 4096;
         $config['max_width'] = 1024;
         $config['max_height'] = 768;
@@ -72,7 +84,7 @@ class Kurir extends CI_Controller {
 
         if (!$this->upload->do_upload('logo_perusahaan')) {
            $error = array('error' => $this->upload->display_errors(),'sukses'=>false);
-
+           
             //$this->load->view('kurir/form_kurir', $error);
            return $error;
         } else {
@@ -92,7 +104,6 @@ class Kurir extends CI_Controller {
                 $row->logo_perusahaan= "<img src='{$gambar}'/>";
                 $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
                            <ul class='dropdown-menu pull-right text-left'>
-                           <li><a href='#' class='clickable' onClick='formKurir({$row->id_kurir},\"show\")'>View</a></li>
                            <li><a href='#' class='clickable' onClick='formKurir({$row->id_kurir},\"edit\")'>Edit</a></li>
                            <li><a href='#' class='clickable' onClick='formKurir({$row->id_kurir},\"delete\")'>Delete</a></li>
                                </ul>
@@ -113,6 +124,7 @@ class Kurir extends CI_Controller {
         $id = $this->input->post('id');
         $hasil = $this->Kurir_Md->getKurir($id);
         $data['kurir'] = $hasil;
+        $data['aksi']="edit";
         $this->load->view('kurir/form_kurir',$data);
     }
     function delete($id){

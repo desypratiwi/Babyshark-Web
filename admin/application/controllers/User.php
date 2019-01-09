@@ -39,7 +39,7 @@ class User extends CI_Controller {
         }
         public function all_user(){
             $data = $this->User_Md->allUsers();
-            
+            $res = array();
             foreach ($data as $row) {
                 $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
                            <ul class='dropdown-menu pull-right text-left'>

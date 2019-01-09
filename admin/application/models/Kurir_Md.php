@@ -12,7 +12,8 @@ class Kurir_Md extends CI_model {
     }
 
     public function getKurir($id) {
-        return $this->db->get('tb_mst_kurir', $id)->row();
+        $this->db->where("id_kurir",$id);
+        return $this->db->get('tb_mst_kurir')->row();
     }
 
     public function addKurir($data) {
@@ -21,6 +22,10 @@ class Kurir_Md extends CI_model {
     public function deleteKurir($id){
         $this->db->where('id_kurir',$id);
         return $this->db->delete("tb_mst_kurir");
+    }
+    public function editKurir($data,$id){
+        $this->db->where("id_kurir",$id);
+        return $this->db->update("tb_mst_kurir",$data);
     }
 
 }

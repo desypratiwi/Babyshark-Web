@@ -12,18 +12,19 @@
             </div>
             <div class="modal-body">
 
-                <form id="form_kategori" method="post" enctype="multipart/form-data" action="<?php echo site_url('kategori/form/tambah') ?>">
+                <form id="form_kategori" method="post" enctype="multipart/form-data" action="<?php echo site_url('kategori/form/'.isset($aksi)?$aksi:"tambah") ?>">
                         <div class="form-group">
                             <label for="nama">Kategori</label>
-                            <input class="form-control" id="nama" type="text" name="nama_kategori" placeholder="Isikan Kategori"/>
+                            <input class="form-control" id="nama" type="text" name="nama_kategori" placeholder="Isikan Kategori" value="<?php echo (isset($kategori->nama_kategori))?($kategori->nama_kategori):"";?>"/>
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi Kategori</label>
-                            <input class="form-control" id="deskripsi" type="textarea" name="deskripsi_kategori" placeholder="Isikan Deskripsi Kategori"/>
+                            <input class="form-control" id="deskripsi" type="textarea" name="deskripsi_kategori" placeholder="Isikan Deskripsi Kategori"value="<?php echo (isset($kategori->deskripsi_kategori))?($kategori->deskripsi_kategori):"";?>"/>
                         </div>
                         <div class="form-group">
                             <label for="gambar">Gambar</label>
-                            <input id="gambar" type="file" class="form-control-file" name="gambar" />
+                            <?php if(!isset($kategori->gambar)){?> <input id="gambar" type="file" class="form-control-file" name="gambar" />
+                            <?php } else ?> <img src="<?php echo base_url($kategori->gambar);?>"/>
                         </div>
                 </form>
             </div>
