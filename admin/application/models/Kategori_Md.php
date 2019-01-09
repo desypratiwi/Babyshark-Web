@@ -1,7 +1,7 @@
 <?php
 
 class Kategori_Md extends CI_model {
-
+    public $DB = "tb_mst_kategori";
     public function __construct() {
         parent:: __construct();
         $this->load->database();
@@ -21,6 +21,10 @@ class Kategori_Md extends CI_model {
     public function deleteKategori($id){
         $this->db->where('id_kategori',$id);
         return $this->db->delete('tb_mst_kategori');
+    }
+    public function updateKategori($data,$id){
+        $this->db->where('id_kategori',$id);
+        return $this->db->update($this->DB,$data);
     }
 
 }

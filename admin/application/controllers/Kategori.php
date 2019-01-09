@@ -45,6 +45,14 @@ class Kategori extends CI_Controller {
             }
             $this->Kategori_Md->addKategori($data);
             redirect(site_url('kategori'));
+        }else{
+            $data = $this->input->post();
+            $hasil = $this->Kategori_Md->updateKategori($data,$data['id_kategori']);
+            if($hasil){
+                redirect(site_url('kategori'));
+            }else{
+                
+            }
         }
     }
 

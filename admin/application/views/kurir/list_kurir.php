@@ -3,7 +3,7 @@
 <script src="<?php echo base_url() . 'asset/js/'; ?>dataTables.bootstrap.min.js" type="text/javascript"></script>
 <link href='<?php echo base_url() . 'asset/css/'; ?>jquery.dataTables.min.css' rel='stylesheet' type='text/css'>
 <div>
-    <div ><button type="button" class="btn btn-primary btn-md pull-right" style="margin-bottom: 20px" data-toggle="modal" data-target="#kurirModal">
+    <div ><button type="button" class="btn btn-primary btn-md pull-right" id="btn_new"  style="margin-bottom: 20px" data-toggle="modal" data-target="#kurirModal">
             <span class="glyphicon glyphicon-plus"></span>New Kurir </button>
     </div>
     
@@ -58,6 +58,7 @@
                 }
             ]
         });
+//        $('#btn_new')
            
     });
     function formKurir(id_kurir,aksi) {
@@ -76,4 +77,6 @@
             window.location= "kurir";
        }  
     }
+    
+    
 </script>
