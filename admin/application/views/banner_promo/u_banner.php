@@ -1,7 +1,7 @@
 
 <div class="inner-block">
 <!--KONTEN-->
-<?php echo form_open_multipart('upload/do_upload');?>
+<?php echo form_open_multipart('c_banner/do_upload');?>
 	<input type="file" name="userfile" size="20" />
 
 			<br /><br />

@@ -6,6 +6,7 @@
 			parent::__construct();
 			$this->load->model('m_banner');
 			$this->load->helper('url');
+			$this->load->helper('form');
 		}
 		
 		public function index(){
@@ -20,7 +21,7 @@
         		'l_banner' => $this->input->post('link')
         	);
 			$this->m_banner->insertBanner($value);
-			$this->load->view('u_banner');
+			$this->load->viewku('u_banner');
 		}
 		
 	}
