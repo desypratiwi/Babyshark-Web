@@ -6,13 +6,17 @@ class Kategori_Md extends CI_model {
         parent:: __construct();
         $this->load->database();
     }
-
+	
     public function addKategori($data) {
         return $this->db->insert('tb_mst_kategori', $data);
     }
 
     public function allKategori() {
-        return $this->db->get("tb_mst_kategori")->result();
+		//$sql = "Select * from tb_mst_kategori";
+		//$query = $this->db->query($sql);
+		//return $query->result();
+		$query = $this->db->get("tb_mst_kategori");
+        return $query->result();
     }
     public function getKategori($id){
         $this->db->where('id_kategori',$id);
