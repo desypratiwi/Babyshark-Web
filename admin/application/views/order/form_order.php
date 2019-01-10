@@ -14,25 +14,19 @@
                 <form id="form_kurir" method="post" enctype="multipart/form-data" action="<?php echo site_url('kurir/form/tambah') ?>">
                     <?php if (isset($error)) print_r($error); ?>
                     <div class="form-group">
-                        <label for="nama">Nama Perusahaan Kurir</label>
-                        <input class="form-control" type="text" id="nama" name="nama_perusahaan" placeholder="Isikan Nama Perusahaann Kurir"/>
+                        <label for="deskripsi">Status</label>
+                        <select>
+                            <option>Menunggu Konfirmasi Penjual</option>
+                            <option>Menunggu Konfirmasi Pembayaran</option>
+                            <option>Sedang Di Proses Penjual</option>
+                            <option>Dikirim oleh Kurir</option>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <label for="deskripsi">Deskripsi Perusahaan Kurir</label>
-                        <input class="form-control" type="textarea" id="deskripsi" name="deskripsi_perusahaan" placeholder="Isikan Deskripsi Perusahaan Kurir"/>
+                        <label for="nama">Resi</label>
+                        <input class="form-control" type="text" id="nama" name="nama_perusahaan" placeholder="Isikan Resi"/>
                     </div>
-                    <div class="form-group">
-                        <label for="telp">Telp Perusahaan Kurir</label>
-                        <input class="form-control" type="textarea" id="telp" name="telp_perusahaan" placeholder="Isikan Telp Kurir"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Perusahaan Kurir</label>
-                        <input class="form-control" type="email" id="email" name="email_perusahaan" placeholder="Isikan Email Kurir"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="logo">Logo</label>
-                        <input id="logo" class="form-control" type="file" name="logo_perusahaan" />
-                    </div>
+
                     <!--<button class="btn btn-primary" type="submit">Tambah</button>-->
 
 
