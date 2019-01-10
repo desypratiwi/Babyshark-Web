@@ -4,13 +4,20 @@
 			parent:: __construct();
 			$this->load->database();
 		}
-		
+		public function updateCustomer($user,$username){
+			$this->db->where('username',$username);
+			$this->db->update('tb_user',$user);
+		}
 		public function getAll(){
 			$c = $this->db->get('customer');
 			return $c->result();
 		}
 		public function getCustomer($email){
 			$custom = $this->db->get_where('customer', array('email' => $email))->result();
+			return $custom;
+		}
+		public function getUser($username){
+			$custom = $this->db->get_where('tb_user', array('username' => $username))->row();
 			return $custom;
 		}
 
@@ -39,3 +46,5 @@
 
 		}
 	}
+	
+	

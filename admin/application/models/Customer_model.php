@@ -1,8 +1,12 @@
 <?php
 	class Customer_model extends CI_model{
 		public function __construct(){
-			parent:: __construct();
+			parent:: __construct();       
 			$this->load->database();
+		}
+		public function insProduct($data){
+		$this->db->insert('tb_mst_produk',$data);
+		                                                                   
 		}
 		
 		public function getAll(){
