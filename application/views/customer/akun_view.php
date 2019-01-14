@@ -52,7 +52,7 @@
 							</div>
 						</div><!--/category-products--></div>
 						
-  <div class="col-lg-8">.<h4>Profil Saya</h4><form class="form-horizontal" method="post" action="<?php echo site_url('akun/update')?>">
+  <div class="col-lg-8">.<h4>Profil Saya</h4><form class="form-horizontal" method="post" action="<?php echo site_url('akun/update')?>" enctype="multipart/form-data">
 
   <input type="hidden" value="<?php echo $user->id_user;?>" name="id">
 							  <div class="form-group">
@@ -105,10 +105,14 @@
 								  <button type="submit" class="btn btn-default">Simpan</button>
 								</div>
 							  </div>
-							</form></div>
-							
-<div class="col-lg-2"><img class="size-medium wp-image-14258 aligncenter" src="<?php echo base_url()?>asset/content/noah.jpg" alt="" width="200" height="150" style="margin-top:25px" />
-<button type="button" class="btn btn-primary btn-sm">Pilih Gambar</button>
+							</div>
+	
+	
+<div class="col-lg-2"><img class="size-medium wp-image-14258 aligncenter" src="<?php echo $user->foto?>" alt="" width="200" height="150" style="margin-top:25px" />
+<div class="form-group">
+<input type="file" id='foto' name="foto" class="btn btn-primary btn-sm"/>
+</div>
+</form>
 </div>
 </div>
 <script src="<?php echo base_url()?>asset/plugins/datepicker/js/bootstrap-datepicker.min.js"></script>
