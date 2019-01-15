@@ -20,10 +20,14 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('home');
+		$produks = $this->m_produk->getAllProduk();
+		$data['produks'] =$produks;
+		$this->load->view('home',$data);
+		
 	}
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper('url');
+		$this->load->model('m_produk');
 	}
 }
