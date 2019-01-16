@@ -3,31 +3,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index()
-	{
-		$produks = $this->m_produk->getAllProduk();
-		$data['produks'] =$produks;
-		$this->load->view('home',$data);
-		
-	}
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper('url');
-		$this->load->model('m_produk');
+		$this->load->model('m_sidebar');
+        $this->load->model('m_shop');
 	}
+	
+	public function index()
+	{
+		$data['produks']=$this->m_shop->getAll();
+		$this->vs($data);
+	}
+	
+	public function vs($var){
+		$dataS=$this->getSidebar();
+		$this->load->viewshop("home",$dataS,$var);
+	}
+
+	public function getSidebar(){
+            $temp['brand'] = $this->m_sidebar->getBrand();
+            $temp['kategori'] = $this->m_sidebar->getKat();
+            return $temp;
+    }
+
+    public function searchk($k){
+    		$data['produk']=$this->m_shop->getByKat($k);
+    		$this->vs($data);
+    }
+
+    public function searchb($b){
+    		$data['produk']=$this->m_shop->getByBrand($b);
+    		$this->vs($data);
+    }
+
+	
 }

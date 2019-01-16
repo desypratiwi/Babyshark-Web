@@ -1,7 +1,7 @@
 
 				<div class="col-sm-9 padding-right">
 					<div class="features_items"><!--features_items-->
-						<h2 class="title text-center">Features Items</h2>
+						<h2 class="title text-center">"<?php echo $title; ?>"</h2>
 
 						<?php foreach ($produk as $row){ ?>
 						<div class="col-sm-4">
