@@ -11,6 +11,7 @@ class C_cart extends CI_Controller {
 
 	public function index(){
 		$data['cart'] = $this->m_cart->getAll();
+		$data['kurir'] = $this->m_cart->getKurir();
 		$this->load->viewcart('v_cart',$data);
 	}
 
@@ -44,6 +45,8 @@ class C_cart extends CI_Controller {
 		$this->m_cart->del($b);
 		redirect('c_cart','refresh');
 	}
+
+
 	
 	
 }

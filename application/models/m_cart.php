@@ -6,6 +6,10 @@ class M_cart extends CI_Model {
 		$this->load->database();
 	}
 		
+	public function getKurir(){
+		return $this->db->get('tb_mst_kurir')->result();
+	}
+
 	public function getAll(){
 		return $this->db->query("SELECT tb_mst_produk.nama_produk as nama_produk,
 										tb_mst_produk.harga_jual as harga_jual,
