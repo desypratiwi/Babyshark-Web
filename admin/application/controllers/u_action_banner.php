@@ -1,7 +1,7 @@
 <?php
 
 public function aksi_upload(){
-	$config['upload_path']          = './admin/upload/';
+	$config['upload_path']          = './admin/uploads/';
 	$config['allowed_types']        = 'gif|jpg|png';
 	$config['max_size']             = 100;
 	$config['max_width']            = 1024;
@@ -9,7 +9,7 @@ public function aksi_upload(){
  
 	$this->load->library('upload', $config);
  
-	if ( ! $this->upload->do_upload('userfile')){
+	if ( ! $this->upload->aksi_upload('userfile')){
 		$error = array('error' => $this->upload->display_errors());
 		$this->load->view('v_upload', $error);
 	}else{
