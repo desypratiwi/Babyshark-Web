@@ -25,6 +25,22 @@ class MY_Loader extends CI_Loader {
         endif;
     }
 
+    public function viewcart($template_name, $vars = array(), $return = FALSE) {
+        if ($return):
+            $content .= $this->view('shop_layout/shop_header', $vars, $return);
+            $content .= $this->view($template_name, $vars, $return);
+            $content .= $this->view('shop_layout/shop_footer', $vars, $return);
+            
+
+            return $content;
+        else:
+            $this->view('shop_layout/shop_header', $vars);
+            $this->view($template_name, $vars);
+            $this->view('shop_layout/shop_footer', $vars);
+            
+        endif;
+    }
+
     
 }
 
