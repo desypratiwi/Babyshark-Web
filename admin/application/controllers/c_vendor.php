@@ -7,7 +7,7 @@
 			$this->load->model('m_vendor');
 			$this->load->helper('url');
 			$this->load->helper('form');
-			$this->output->enable_profiler(TRUE);
+			//$this->output->enable_profiler(TRUE);
 		}
 		
 		public function index(){
