@@ -37,12 +37,12 @@ Ubah policy (footer)
 BAGIAN 4 : Raham
 
 -Vendor : 
-Update order
-Tambah brand (Kurang foto Logo)
-Update detail toko (Kurang foto Logo)
+X Update order
+X Tambah brand (Kurang foto Logo)
+X Update detail toko (Kurang foto Logo)
 Pembeli : 
 Add to cart
-Pencarian 
+X Pencarian (Pencarian)
 ---------------------------
 BAGIAN 5 : Desy
 
