@@ -8,7 +8,7 @@ class U_banner extends CI_Controller{
 	}
  
 	public function index(){
-		$this->load->view('v_upload', array('error' => ' ' ));
+		$this->load->viewku('banner_promo/v_banner', array('error' => ' ' ));
 	}
  
 	public function aksi_upload(){
@@ -20,12 +20,12 @@ class U_banner extends CI_Controller{
  
 		$this->load->library('upload', $config);
  
-		if ( ! $this->upload->do_upload('berkas')){
+		if ( ! $this->upload->aksi_upload('userfile')){
 			$error = array('error' => $this->upload->display_errors());
-			$this->load->view('v_upload', $error);
+			$this->load->viewku('banner_promo/v_banner', $error);
 		}else{
 			$data = array('upload_data' => $this->upload->data());
-			$this->load->view('v_upload_sukses', $data);
+			$this->load->viewku('banner_promo/v_upload_sukses', $data);
 		}
 	}
 	

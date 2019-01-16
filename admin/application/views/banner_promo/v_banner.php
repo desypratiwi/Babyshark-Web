@@ -3,7 +3,7 @@
 		<title>Upload Banner</title>
 	</head>
 		<body>
-			<?php echo form_open_multipart('upload/aksi_upload');?>
+			<?php echo form_open_multipart('U_banner/aksi_upload');?>
 		 
 			<input type="file" name="userfile" size="20" />
 		 
