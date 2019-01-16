@@ -10,7 +10,8 @@ class U_banner extends CI_Controller{
  	}
 
 	public function index(){
-		$this->load->viewku('banner_promo/v_banner', array('error' => ' ' ));
+		$data['table'] = $this->M_banner->view();
+		$this->load->viewku('banner_promo/v_banner',$data);
 	}
  
 	public function aksi_upload(){
@@ -21,19 +22,19 @@ class U_banner extends CI_Controller{
 		$config['max_height']           = 768;
 
 		$this->load->library('upload', $config);
- 
+
 		if ( ! $this->upload->do_upload('userfile')){
 			$error = array('error' => $this->upload->display_errors());
-			$this->load->viewku('banner_promo/v_banner', $error);
+			$this->index();
+			//$this->load->viewku('banner_promo/v_banner', $error);
 		}else{
 			$data = array('upload_data' => $this->upload->data());
 			$data = $this->upload->data();
 			$nama = $data['file_name'];
 			
 			$this->M_banner->databaseName($nama);
-			$this->load->viewku('banner_promo/v_banner', $data);
-			//$data['tb_banner_promo'] = $this->M_banner->view();
-			//$this->load->view('banner_promo/v_banner', $data);
+			//$this->load->viewku('banner_promo/v_banner', $data);
+			$this->index();
 		}
 	}
  
