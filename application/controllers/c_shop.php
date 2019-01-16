@@ -11,6 +11,7 @@ class C_shop extends CI_Controller {
 	public function index()
 	{
 		$data['produk']=$this->m_shop->getAll();
+		$data['title']="Featured Items";
 		$this->vs($data);
 	}
 	
@@ -27,11 +28,20 @@ class C_shop extends CI_Controller {
 
     public function searchk($k){
     		$data['produk']=$this->m_shop->getByKat($k);
+    		$data['title']=$k;
     		$this->vs($data);
     }
 
     public function searchb($b){
     		$data['produk']=$this->m_shop->getByBrand($b);
+    		$data['title']=$b;
+    		$this->vs($data);
+    }
+
+    public function search(){
+    		$s = $this->input->post('search');
+    		$data['produk']=$this->m_shop->getBySearch($s);
+    		$data['title']=$s;
     		$this->vs($data);
     }
 
