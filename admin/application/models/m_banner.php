@@ -36,7 +36,14 @@
 				'desc'=>$this->input->post('input_desc'));
 			$this->db->insert('tb_banner_promo', $data);
 		}
-			
+
+		public function databaseName($name){
+			$data = array(
+				'id_banner' => '',
+				'nama_file' => $name
+			);
+			$this->db->insert('tb_banner_promo',$data);
 		}
+	}
 		
 ?>

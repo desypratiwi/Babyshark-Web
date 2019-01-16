@@ -27,6 +27,9 @@ class U_banner extends CI_Controller{
 			$this->load->viewku('banner_promo/v_banner', $error);
 		}else{
 			$data = array('upload_data' => $this->upload->data());
+			$data = $this->upload->data();
+			$nama = $data['file_name'];
+			$this->M_banner->databaseName($nama);
 			$this->load->viewku('banner_promo/v_upload_sukses', $data);
 			//$data['tb_banner_promo'] = $this->M_banner->view();
 			//$this->load->view('banner_promo/v_banner', $data);
