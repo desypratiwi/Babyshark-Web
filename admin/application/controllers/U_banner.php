@@ -10,16 +10,16 @@ class U_banner extends CI_Controller{
  	}
 
 	public function index(){
-		$data['table'] = $this->M_banner->view();
+		$data['table'] = $this->M_banner->getData();
 		$this->load->viewku('banner_promo/v_banner',$data);
 	}
  
 	public function aksi_upload(){
 		$config['upload_path']          = './gambar/';
 		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 100;
-		$config['max_width']            = 1024;
-		$config['max_height']           = 768;
+		$config['max_size']             = 2000;
+		$config['max_width']            = 5000;
+		$config['max_height']           = 5000;
 
 		$this->load->library('upload', $config);
 

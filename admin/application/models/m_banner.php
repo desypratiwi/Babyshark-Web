@@ -1,7 +1,7 @@
 <?php
 	class M_banner extends CI_model{
 		//fungsi menampilkan data gambar
-		public function view(){
+		public function getData(){
 			return $this->db->get('tb_banner_promo')->result();
 		}
 
