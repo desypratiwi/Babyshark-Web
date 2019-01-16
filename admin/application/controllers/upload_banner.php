@@ -11,8 +11,8 @@ class Upload_banner extends CI_Controller{
 		$this->load->view('banner_promo/v_upload', array('error' => ' ' ));
 	}
  
-	public function aksi_upload(){
-		$config['upload_path']          = './admin/uploads/';
+	public function do_upload(){
+		$config['upload_path']          = './uploads/';
 		$config['allowed_types']        = 'gif|jpg|png';
 		$config['max_size']             = 100;
 		$config['max_width']            = 1024;

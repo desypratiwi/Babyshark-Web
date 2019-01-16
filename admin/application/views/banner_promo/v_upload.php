@@ -1,6 +1,6 @@
 <div class="inner-block">
 <!--KONTEN-->
-	<?php echo form_open_multipart('upload/aksi_upload');?>
+	<?php echo form_open_multipart('upload/do_upload');?>
  
 	<input type="file" name="berkas" />
  
