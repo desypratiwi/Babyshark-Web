@@ -1,8 +1,8 @@
 <?php
 	class M_konfirmasi extends CI_model{
 		//fungsi menampilkan data gambar
-		public function getData(){
-			return $this->db->get('tb_mst_pembayaran')->result();
+		public function getStatus(){
+			return $this->db->get('tb_tr_order')->result();
 		}
 
 		public function databaseName($name){
