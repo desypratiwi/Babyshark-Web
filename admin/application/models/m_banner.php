@@ -8,7 +8,8 @@
 		public function databaseName($name){
 			$data = array(
 				'id_banner' => '',
-				'nama_file' => $name
+				'nama_file' => $name,
+				'deskripsi'=>$this->input->post('desc')
 			);
 			$this->db->insert('tb_banner_promo',$data);
 		}

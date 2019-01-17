@@ -8,7 +8,7 @@
 			<?php echo form_open_multipart('U_banner/aksi_upload');?>
 		
 			<input type="file" name="userfile" size="20" />
-      <input type="text" name="desc" placeholder="Deskripsi" />
+      <input type="text" name="desc" placeholder="Deskripsi" value="<?php echo set_value('desc'); ?>" />
 		 
 			<br></br>
 		 
