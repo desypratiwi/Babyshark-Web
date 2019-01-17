@@ -15,16 +15,16 @@
                     <?php if (isset($error)) print_r($error); ?>
                     <div class="form-group">
                         <label for="deskripsi">Status</label>
-                        <select>
-                            <option>Menunggu Konfirmasi Penjual</option>
-                            <option>Menunggu Konfirmasi Pembayaran</option>
-                            <option>Sedang Di Proses Penjual</option>
-                            <option>Dikirim oleh Kurir</option>
+                        <select name='status'>
+                            <option value='MKP'>Menunggu Konfirmasi Pembayaran</option>
+                            <option value='MKPE'>Menunggu Konfirmasi Penjual</option>
+                            <option value='SDPP'>Sedang Di Proses Penjual</option>
+                            <option value='DK'>Dikirim oleh Kurir</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="nama">Resi</label>
-                        <input class="form-control" type="text" id="nama" name="nama_perusahaan" placeholder="Isikan Resi"/>
+                        <input class="form-control" type="text" id="resi" name="nama_perusahaan" placeholder="Isikan Resi"/>
                     </div>
 
                     <!--<button class="btn btn-primary" type="submit">Tambah</button>-->
