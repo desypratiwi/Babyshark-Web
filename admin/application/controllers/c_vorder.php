@@ -20,8 +20,8 @@
 			redirect('c_vorder');
 		}
 
-		public function kirim($id){
-			$resi = $this->input->post('resi');
+		public function kirim1($id){
+			$resi = $this->input->post('resi1');
 			$this->m_vorder->kirim($id,$resi);
 			redirect('c_vorder');
 		}

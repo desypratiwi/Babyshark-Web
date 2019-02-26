@@ -39,8 +39,8 @@
                     </form>
                     ";
                         break;
-                    case 'SDPP': echo "<form action=".site_url('c_vorder/kirim/')." METHOD='POST'>
-                                        RESI:<input type='text' name='resi'><br>
+                    case 'SDPP': echo "<form action=".site_url('c_vorder/kirim1/')." METHOD='POST'>
+                                        RESI:<input type='text' name='resi1'><br>
                                         <button type='submit' value ='KIRIM' formaction=".site_url('c_vorder/kirim/'.$row->id_order).">KIRIM</button>
                                         </form>";
                         break;          

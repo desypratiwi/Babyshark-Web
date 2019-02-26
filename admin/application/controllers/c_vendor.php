@@ -14,7 +14,7 @@
 			
 		}
 		
-		public function update($pId){
+		public function update($pId = 1){
 			$temp['data'] = $this->m_vendor->getVendor($pId);
 			$this->load->viewku('vendor/v_updateVendor',$temp);
 		}
@@ -24,7 +24,7 @@
         		
         		'username' => $this->input->post('nama_o'),
         		'nama_vendor' => $this->input->post('nama_v'),
-				'nama_owner' => $this->input->post('alamat'),
+				'nama_owner' => $this->input->post('nama_o'),
         		'telp_vendor' => $this->input->post('telp'),
         		'alamat_vendor' => $this->input->post('alamat'),
         		'kota_vendor' => $this->input->post('kota'),
