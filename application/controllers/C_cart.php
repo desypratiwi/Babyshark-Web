@@ -5,14 +5,21 @@ class C_cart extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper('url');
-		$this->load->model('m_cart');
-		$this->output->enable_profiler(TRUE);		
+		$this->load->model('m_cart');		
 	}
 
 	public function index(){
 		$data['cart'] = $this->m_cart->getAll();
 		$data['kurir'] = $this->m_cart->getKurir();
 		$this->load->viewcart('v_cart',$data);
+	}
+
+	public function checkout($idC = 7){
+		$total = $this->input->post('totalALL');
+		$kurir = $this->input->post('kurir');
+
+		$this->m_cart->checkout($total,$kurir,$idC);
+		redirect('c_cart','refresh');
 	}
 
 	public function addToCart($idBarang){

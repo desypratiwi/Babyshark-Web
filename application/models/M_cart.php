@@ -5,7 +5,7 @@ class M_cart extends CI_Model {
 		parent:: __construct();
 		$this->load->database();
 	}
-		
+	
 	public function getKurir(){
 		return $this->db->get('tb_mst_kurir')->result();
 	}
@@ -22,6 +22,44 @@ class M_cart extends CI_Model {
 
 	public function getHarga($id){
 		return $this->db->get_where('tb_mst_produk', array('id_produk' => $id))->row();
+	}
+
+	public function checkout($total,$kurir,$idC){
+		$date = date("Y-m-d h:i:s");
+		$data1 = array('id_order' => '',
+						'tgl_order' => $date,
+						'total_pembayaran' => $total,
+						'id_pembayaran' => '0',
+						'id_customer' => $idC,
+						'id_status' => 'BM',
+						'resi' => '0',
+						'date_created' => $date,
+						'date_modified' => $date
+					);
+		$this->db->insert('tb_tr_order', $data1);
+		$this->db->reset_query();
+
+		$this->db->where('id_customer' , $idC);
+		$this->db->where('tgl_order' , $date);
+		$dataOrder = $this->db->get('tb_tr_order')->row();
+		$this->db->reset_query();
+
+		$this->db->where('id_customer' , $idC);
+		$dataCart = $this->db->get('tb_tr_cart')->result();
+		$this->db->reset_query();
+
+		foreach($dataCart as $row){
+			$data2 = array('id_order' => $dataOrder->id_order, 
+							'id_produk' => $row->id_barang,
+							'banyak' => $row->jumlah,
+							'subtotal' => $row->subtotal,
+							'id_kurir' => $kurir);
+			$this->db->insert('tb_tr_detail_order', $data2);
+		}
+		$this->db->reset_query();
+
+		$this->db->where('id_customer', $idC);
+		$this->db->delete('tb_tr_cart');
 	}
 
 	public function addToCart($harga,$idBr,$idCust = 7){

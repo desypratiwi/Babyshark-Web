@@ -73,7 +73,7 @@
 								<label>Kurir:</label>
 								<select id='kurir'>
 								<?php foreach($kurir as $row){ ?>
-									<option value='<?php echo $row->harga; ?>'><?php echo $row->nama_perusahaan."- Rp.".$row->harga; ?></option>
+									<option value=<?php echo $row->harga.'|'.$row->id_kurir; ?>><?php echo $row->nama_perusahaan."- Rp.".$row->harga; ?></option>
 								<?php } ?>
 								</select>
 								
@@ -82,11 +82,19 @@
 						</ul>
 						<script type="text/javascript">
 							function hitung() {
-								document.getElementById('kurirtext').innerHTML= document.getElementById("kurir").value;
+								var kurir = document.getElementById("kurir").value;
+								var kurirA = kurir.split('|');
+								var idk = kurirA['1'];
+								var hargak = kurirA['0']; 
+
+								document.getElementById('kurirtext').innerHTML= hargak;
+
 								var carttotal = parseInt(document.getElementById("carttotal").innerHTML,10);
 								var kurir = parseInt(document.getElementById("kurirtext").innerHTML,10);
+
 								document.getElementById('total').innerHTML = carttotal + kurir;
 								document.getElementById('totalALL').value = carttotal + kurir;
+								document.getElementById('kurir').value = idk;
 							}
 
 						</script>
@@ -100,9 +108,11 @@
 							<li>Shipping Cost <span id='kurirtext'>0</span></li>
 							<li>Total <span id='total'><?php echo $total; ?></span></li>
 						</ul>
+						<form action='<?php echo base_url().'index.php/c_cart/checkout/'; ?>' method='POST'>
 							<input type='hidden' name='totalALL' value='<?php echo $total; ?>'>
-							<a class="btn btn-default update" href="">Update</a>
-							<a class="btn btn-default check_out" href="">Check Out</a>
+							<input type='hidden' name='kurir' value=''>
+							<button type='submit' class="btn btn-default check_out">Check Out</button>
+						</form>
 					</div>
 				</div>
 			</div>
