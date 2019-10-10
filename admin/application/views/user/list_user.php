@@ -6,7 +6,7 @@
     <div ><button type="button" class="btn btn-primary btn-md pull-right" style="margin-bottom: 20px" data-toggle="modal" data-target="#userModal">
             <span class="glyphicon glyphicon-plus"></span>New User </button>
     </div>
-
+<?php // print_r($role)?>
     <table id="tabel-user" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>

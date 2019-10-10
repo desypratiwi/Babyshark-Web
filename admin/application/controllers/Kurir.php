@@ -101,7 +101,7 @@ class Kurir extends CI_Controller {
         
          foreach ($data as $row) {
                 $gambar = base_url($row->logo_perusahaan);
-                $row->logo_perusahaan= "<img src='{$gambar}'/>";
+                $row->logo_perusahaan= "<img style='width:150px;height:150px;'src='{$gambar}'/>";
                 $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
                            <ul class='dropdown-menu pull-right text-left'>
                            <li><a href='#' class='clickable' onClick='formKurir({$row->id_kurir},\"edit\")'>Edit</a></li>

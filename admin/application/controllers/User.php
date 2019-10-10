@@ -21,7 +21,10 @@ class User extends CI_Controller {
 	public function index()
 	{
                 $users= $this->User_Md->allUsers();
-                $data['user']= $users;
+                $data['users']= $users;
+                $role = $this->User_Md->getRoles();
+//                print_r($role);
+                $data['role'] = $role;
 		$data['all'] = $this->load->viewku('user/list_user',$data);
                 $this->load->view('user/form_user',$data);
 	}
@@ -30,9 +33,26 @@ class User extends CI_Controller {
 		$this->load->helper('url');
                 $this->load->model('User_Md');
 	}
+         public function form($action) {
+        if ($action == "tambah") {
+            $data = $this->input->post();
+            
+            $this->User_Md->insertUser($data);
+            redirect(site_url('user'));
+        }else{
+            $data = $this->input->post();
+//            print_r($data);
+            $hasil = $this->User_Md->updateUser($data,$data['id_user']);
+            if($hasil){
+                redirect(site_url('user'));
+            }else{
+                
+            }
+        }
+    }
         public function list_user(){
                 $users= $this->User_Md->allUsers();
-                $data['user']= $users;
+                $data['users']= $users;
 		$data['all'] = $this->load->view('user/list_user',$data);
                 $this->load->view('user/form_user',$data);
                 //$this->load->view('user/form_user');
@@ -43,7 +63,6 @@ class User extends CI_Controller {
             foreach ($data as $row) {
                 $aksi = "<div class='btn-group'><a href='#' data-toggle='dropdown' class='dropdown-toggle'><i class='fa fa-cog'></i></a>
                            <ul class='dropdown-menu pull-right text-left'>
-                           <li><a href='#' class='clickable' onClick='formUser(\"{$row->username}\",\"show\")'>View</a></li>
                            <li><a href='#' class='clickable' onClick='formUser(\"{$row->username}\",\"edit\")'>Edit</a></li>
                            <li><a href='#' class='clickable' onClick='formUser(\"{$row->username}\",\"delete\")'>Delete</a></li>
                                </ul>
@@ -66,7 +85,11 @@ class User extends CI_Controller {
             $data = $this->input->post();
             $id = $data['id'];
             $user = $this->User_Md->getDetailUser($id);
+            $role = $this->User_Md->getRoles();
+            $data['role'] = $role;
             $data['user']= $user;
+            $data['aksi'] = "edit";
+//            print_r($data);
             $this->load->view('user/form_user',$data);
         }
         public function delete(){

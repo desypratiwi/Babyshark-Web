@@ -9,7 +9,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="<?php echo base_url().'asset/images/';?>home/product1.jpg" alt="" />
+											<img src="<?php echo base_url($produks[$i]->gambar)?>" alt="" />
 											<h2><?php echo $produks[$i]->harga_jual; ?></h2>
 											<p><?php echo $produks[$i]->nama_produk; ?></p>
 											<a href="<?php echo base_url().'index.php/c_cart/addToCart/'.$produks[$i]->id_produk; ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>

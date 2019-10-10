@@ -10,6 +10,9 @@ class User_Md extends CI_model {
         $this->db->where('username',$username);
         return $this->db->delete('tb_user');
     }
+    public function insertUser($data){
+        return $this->db->insert("tb_user",$data);
+    }
     public function allUsers() {
         $q = "SELECT
 	*
@@ -21,7 +24,8 @@ class User_Md extends CI_model {
     }
     
     public function getUser($id) {
-        return $this->db->get('tb_user', $id)->row();
+        $this->db->where("username",$id);
+        return $this->db->get('tb_user')->row();
     }
 
     public function updateUser($data,$id){
@@ -50,9 +54,15 @@ class User_Md extends CI_model {
                 
                 return $this->query($q)->result();
     }
+    public function getAllRole(){
+        return $this->db->get("tb_role")->result();
+        
+        
+    }
     public function getVendor($usr){
         $q= "SELECT
                 us.username,
+                us.nama,
                 us.`password`,
                 vn.nama_owner,
                 vn.nama_vendor,
@@ -75,11 +85,15 @@ class User_Md extends CI_model {
     }
     public function getDetailUser($usr){
         $q= "SELECT
+                us.id_user,
                 us.username,
                 us.`password`,
+                us.nama,
+                us.no_telp,
                 cs.nama_customer,
                 cs.alamat,
                 cs.kota,
+                
                 cs.email,
                 cs.tgl_lahir,
                 cs.telp_customer,
@@ -103,7 +117,7 @@ class User_Md extends CI_model {
                 us.username = '{$usr}'";
         
         $hasil = $this->db->query($q)->row();
-        //print_r($hasil);
+//       print_r($hasil);
         if($hasil->id_role=='1'){
             $hasil = $this->getUser($usr);
             return $hasil;
