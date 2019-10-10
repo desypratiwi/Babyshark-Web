@@ -23,12 +23,11 @@
 						<?php
 						$total = 0;
 						foreach($cart as $row){
-
 						$subtotal = $row->subtotal; 
 						$total = $total + $subtotal; ?>
 						<tr>
 							<td class="cart_product">
-								<a href=""><img src="images/cart/one.png" alt=""></a>
+								<a href=""><img style="width: 100px; height: 100px" src="<?php echo base_url($row->gambar);?>" alt=""></a>
 							</td>
 							<td class="cart_description">
 								<h4><a href=""><?php echo $row->nama_produk; ?></a></h4>

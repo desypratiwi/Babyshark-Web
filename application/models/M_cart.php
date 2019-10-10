@@ -15,7 +15,8 @@ class M_cart extends CI_Model {
 										tb_mst_produk.harga_jual as harga_jual,
 										tb_tr_cart.jumlah as jumlah,
 										tb_tr_cart.subtotal as subtotal,
-										tb_tr_cart.id_barang as id_barang
+										tb_tr_cart.id_barang as id_barang,
+										tb_mst_produk.gambar as gambar
 								FROM tb_mst_produk, tb_tr_cart 
 								WHERE tb_mst_produk.id_produk=tb_tr_cart.id_barang")->result();
 	}	
